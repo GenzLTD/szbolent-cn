@@ -1,0 +1,82 @@
+# =============================================================
+# szbolent.cn 部署栈 — 阿里云 47.115.168.107（自包含）
+#
+#   内容线：wordpress + mysql        （szbolent.cn 门户/博客）
+#   实验向量库：pgvector              （组织/实验，收内网）
+#
+#   docker compose up -d
+#
+# 收内网惯例：所有端口一律 127.0.0.1: 绑定，公网不可达。
+# 真值走 .env（CI 由 GitHub Secrets 注入），不入库。
+# =============================================================
+
+services:
+  # ---------- 内容线：WordPress + MySQL ----------
+  mysql:
+    image: mysql:8.0
+    container_name: bolent_wp_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-bolent_wp}
+      MYSQL_USER: ${MYSQL_USER:-wordpress}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - bolent_wp_mysql_data:/var/lib/mysql
+    networks:
+      - szbolent-net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${MYSQL_ROOT_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 8
+      start_period: 40s
+
+  wordpress:
+    image: wordpress:6.7-php8.3-apache
+    container_name: bolent_wp
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: ${MYSQL_USER:-wordpress}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE:-bolent_wp}
+      WORDPRESS_TABLE_PREFIX: bolent_
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME','${WP_HOME}');
+        define('WP_SITEURL','${WP_SITEURL}');
+        define('DISALLOW_FILE_EDIT', true);
+    volumes:
+      - bolent_wp_data:/var/www/html
+    ports:
+      - "127.0.0.1:8080:80"
+    networks:
+      - szbolent-net
+
+  # ---------- 实验向量库：pgvector（组织/实验，收内网）----------
+  pgvector:
+    image: docker.m.daocloud.io/pgvector/pgvector:pg16
+    container_name: pgvector
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${PGVECTOR_PASSWORD}
+    volumes:
+      - /data/pgvector:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  bolent_wp_mysql_data:
+  bolent_wp_data:
+
+networks:
+  szbolent-net:
+    driver: bridge
