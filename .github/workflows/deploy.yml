@@ -8,7 +8,9 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    # 自托管 runner（Vultr，固定 IP 已入目标机 SSH 白名单）——
+    # GitHub 托管 runner 的出口 IP 是动态的，永远过不了目标机的 SSH 白名单。
+    runs-on: [self-hosted, aliyun-deploy]
     steps:
       - uses: actions/checkout@v4
 
