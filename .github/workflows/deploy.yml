@@ -28,13 +28,18 @@ jobs:
       - name: Ensure dirs
         run: ssh deploy 'mkdir -p /opt/szbolent-cn /data/pgvector'
 
-      - name: Rsync compose / nginx / scripts / mu-plugins / htaccess
+      - name: Rsync compose / nginx / scripts / mu-plugins / htaccess / bookstore-data
         run: |
           rsync -avz docker-compose.yml deploy:/opt/szbolent-cn/
           rsync -avz nginx/ deploy:/opt/szbolent-cn/nginx/
           rsync -avz scripts/ deploy:/opt/szbolent-cn/scripts/
           rsync -avz mu-plugins/ deploy:/opt/szbolent-cn/mu-plugins/
           rsync -avz htaccess deploy:/opt/szbolent-cn/htaccess
+          # 9,417 首陆游作品全集（Phase A 导入用）；目录不存在则跳过
+          if [ -d bookstore-data ]; then rsync -avz bookstore-data/ deploy:/opt/szbolent-cn/bookstore-data/; fi
+          # Phase B：modown 主题/插件（由 sync-modown-from-genz.sh 预填，缺则跳过）
+          if [ -d themes ]; then rsync -avz themes/ deploy:/opt/szbolent-cn/themes/; fi
+          if [ -d plugins ]; then rsync -avz plugins/ deploy:/opt/szbolent-cn/plugins/; fi
 
       - name: Write .env (first time only)
         env:
@@ -53,7 +58,7 @@ jobs:
       - name: Up stack
         run: ssh deploy 'cd /opt/szbolent-cn && docker compose up -d'
 
-      - name: Apply mu-plugins (ICP footer) + htaccess (幂等)
+      - name: Apply mu-plugins (bookstore + ICP footer) + htaccess (幂等)
         run: |
           ssh deploy 'if docker ps --format "{{.Names}}" | grep -q "^bolent_wp$"; then
             docker exec bolent_wp mkdir -p /var/www/html/wp-content/mu-plugins
@@ -61,7 +66,42 @@ jobs:
             docker exec bolent_wp chown -R www-data:www-data /var/www/html/wp-content/mu-plugins
             docker cp /opt/szbolent-cn/htaccess bolent_wp:/var/www/html/.htaccess
             docker exec bolent_wp chown www-data:www-data /var/www/html/.htaccess
-            echo "✅ mu-plugins + htaccess 已注入容器";
+            docker exec bolent_wp mkdir -p /var/www/html/wp-content/scripts
+            docker cp /opt/szbolent-cn/scripts/. bolent_wp:/var/www/html/wp-content/scripts/
+            docker exec bolent_wp chown -R www-data:www-data /var/www/html/wp-content/scripts
+            echo "✅ mu-plugins + htaccess + scripts 已注入容器";
+          else echo "⏭ bolent_wp 未运行，跳过"; fi'
+
+      - name: Apply pgvector schema (幂等)
+        run: |
+          ssh deploy 'if docker ps --format "{{.Names}}" | grep -q "^pgvector$"; then
+            docker exec -i pgvector psql -U postgres -f - < /opt/szbolent-cn/scripts/pgvector-schema.sql \
+              && echo "✅ pgvector schema 已应用" || echo "⏭ pgvector schema 失败，检查密码/路径";
+          else echo "⏭ pgvector 未运行，跳过"; fi'
+
+      - name: Import 9,417 poems into WordPress (幂等)
+        run: |
+          ssh deploy 'if docker ps --format "{{.Names}}" | grep -q "^bolent_wp$"; then
+            if [ -f /opt/szbolent-cn/bookstore-data/luyou.json ]; then
+              docker exec bolent_wp mkdir -p /var/www/html/wp-content/uploads/bookstore
+              docker cp /opt/szbolent-cn/bookstore-data/luyou.json bolent_wp:/var/www/html/wp-content/uploads/bookstore/luyou.json
+              docker exec bolent_wp chown -R www-data:www-data /var/www/html/wp-content/uploads/bookstore
+              docker exec bolent_wp php /var/www/html/wp-content/scripts/import-poems.php \
+                && echo "✅ 诗词导入完成" || echo "⏭ 导入脚本报错";
+            else echo "⏭ 缺少 luyou.json，跳过导入"; fi
+          else echo "⏭ bolent_wp 未运行，跳过"; fi'
+
+      - name: Phase B — apply modown theme/plugins if present (幂等)
+        run: |
+          ssh deploy 'if docker ps --format "{{.Names}}" | grep -q "^bolent_wp$"; then
+            if [ -d /opt/szbolent-cn/themes ] && [ -n "$(ls -A /opt/szbolent-cn/themes 2>/dev/null)" ]; then
+              docker cp /opt/szbolent-cn/themes/. bolent_wp:/var/www/html/wp-content/themes/
+              docker exec bolent_wp chown -R www-data:www-data /var/www/html/wp-content/themes
+              echo "✅ 主题已注入（含 modown）"; fi
+            if [ -d /opt/szbolent-cn/plugins ] && [ -n "$(ls -A /opt/szbolent-cn/plugins 2>/dev/null)" ]; then
+              docker cp /opt/szbolent-cn/plugins/. bolent_wp:/var/www/html/wp-content/plugins/
+              docker exec bolent_wp chown -R www-data:www-data /var/www/html/wp-content/plugins
+              echo "✅ 插件已注入（含 Lyanna/erphpdown）"; fi
           else echo "⏭ bolent_wp 未运行，跳过"; fi'
 
       - name: Retire stale nginx confs (归档旧手写 conf，幂等)

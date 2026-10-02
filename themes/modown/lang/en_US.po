@@ -1,0 +1,3594 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Modown\n"
+"POT-Creation-Date: 2023-12-02 13:11+0800\n"
+"PO-Revision-Date: 2023-12-02 13:27+0800\n"
+"Last-Translator: \n"
+"Language-Team: mobantu.com\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: inc/plugin-activation.php\n"
+"X-Poedit-SearchPathExcluded-2: framework\n"
+"X-Poedit-SearchPathExcluded-3: inc/includes\n"
+"X-Poedit-SearchPathExcluded-4: inc/plugin/classic-editor.php\n"
+
+#: action/captcha.php:49 action/user.php:166
+msgid "验证码："
+msgstr "Captcha: "
+
+#: action/captcha.php:50 action/user.php:167 module/login.php:12
+#: module/login.php:37 module/login.php:42 module/login.php:78
+#: module/user-erphpdown.php:1261 module/user-erphpdown.php:1280
+#: module/user.php:254 module/user.php:273 template/login.php:175
+#: template/login.php:180 template/login.php:302 template/login.php:398
+#: template/login.php:432 template/login.php:464
+msgid "验证码"
+msgstr "Captcha"
+
+#: action/check.php:9
+msgid "用户名至少6位字符"
+msgstr "The username must be at least 6 characters"
+
+#: action/check.php:11 action/login.php:52
+msgid "请输入用户名"
+msgstr "Please enter a username"
+
+#: action/check.php:13 action/login.php:54
+msgid "此用户名包含无效字符，请输入有效的用户名"
+msgstr ""
+"The username contains invalid characters, please enter a valid username"
+
+#: action/check.php:16 action/login.php:57
+msgid "此用户名已被注册，请换一个"
+msgstr "The username has already been registered"
+
+#: action/check.php:23 action/login.php:77 action/user.php:52
+#: action/user.php:146
+msgid "请输入邮箱地址"
+msgstr "Please enter a email address"
+
+#: action/check.php:25 action/login.php:79
+msgid "邮箱格式不正确"
+msgstr "The email format error"
+
+#: action/check.php:28 action/login.php:82 action/user.php:58
+#: action/user.php:152
+msgid "此邮箱已被注册，请换一个"
+msgstr "The email address has already been registered"
+
+#: action/comment.php:17
+msgid "获取评论信息失败"
+msgstr "Failed to get comment information"
+
+#: action/comment.php:31
+msgid "验证码错误，请严格区分大小写"
+msgstr "CAPTCHA error, please be strictly case sensitive"
+
+#: action/comment.php:69
+msgid "你必须登录才能发表评论"
+msgstr "You must be logged in to leave a comment"
+
+#: action/comment.php:77
+msgid "请填写昵称和邮箱"
+msgstr "Please enter your nickname and email address"
+
+#: action/comment.php:80
+msgid "请填写有效的邮箱地址"
+msgstr "Please enter a valid email address"
+
+#: action/comment.php:85
+msgid "请填写点评论"
+msgstr "Please enter some comments"
+
+#: action/comment.php:131 inc/base.php:1025
+msgid "待审核"
+msgstr "Pending"
+
+#: action/file.php:4 action/image.php:4 action/photo.php:6
+msgid "上传失败"
+msgstr "Upload failed"
+
+#: action/file.php:11
+msgid "附件格式只支持.zip .rar .7z"
+msgstr "Attachment format are only supported for .zip .rar .7z"
+
+#: action/image.php:52 action/photo.php:18
+msgid "图片格式只支持.jpg .png"
+msgstr "Image formats are only supported for .jpg .png"
+
+#: action/login.php:14 action/login.php:91
+msgid "验证码错误，请重新刷新验证码"
+msgstr "Captcha error, please refresh the captcha again"
+
+#: action/login.php:23
+msgid "未知邮箱，请检查或使用用户名"
+msgstr "Unknown email, please check or use your username"
+
+#: action/login.php:64 action/login.php:72 action/user.php:36
+#: action/user.php:45 action/user.php:130 action/user.php:139
+msgid "暂不支持此域名邮箱后缀"
+msgstr "The email domain suffix is currently not supported"
+
+#: action/login.php:85
+msgid "请输入密码"
+msgstr "Please enter a password"
+
+#: action/login.php:86
+msgid "密码长度不得小于6位"
+msgstr "The password must be at least 6 characters"
+
+#: action/login.php:97
+msgid "验证码与邮箱不对应"
+msgstr "The verification code does not correspond to the email address"
+
+#: action/login.php:103
+msgid "请填写邀请码"
+msgstr "Please enter a invitation code"
+
+#: action/login.php:109 action/login.php:111
+msgid "无效的邀请码"
+msgstr "Invalid invitation code"
+
+#: action/login.php:113
+msgid "邀请码已用完"
+msgstr "Invitation codes have been used up"
+
+#: action/login.php:115
+msgid "邀请码已过期"
+msgstr "The invitation code has expired"
+
+#: action/login.php:136 action/login.php:161 action/login.php:307
+#: action/user.php:203 action/user.php:235 action/user.php:278
+#: action/user.php:287 action/user.php:1061 action/user.php:1078
+#: action/user.php:1092 action/user.php:1106 action/user.php:1272
+#: action/user.php:1745 action/vip.php:221
+msgid "系统超时，请稍后重试"
+msgstr "The system timed out, please try again later"
+
+#: action/login.php:168 action/login.php:223 action/login.php:247
+msgid "非法请求"
+msgstr "Illegal request"
+
+#: action/login.php:177
+msgid "用户名不存在"
+msgstr "The username does not exist"
+
+#: action/login.php:182
+msgid "用户未设定邮箱"
+msgstr "The user does not set an email address"
+
+#: action/login.php:188
+msgid "邮箱不存在"
+msgstr "The email does not exist"
+
+#: action/login.php:208
+msgid "重置密码"
+msgstr "Reset password"
+
+#: action/login.php:209
+msgid "您刚刚发起了重置密码请求，请点击下面的链接重置密码："
+msgstr ""
+"You have just initiated a password reset request, please click the link "
+"below to reset your password:"
+
+#: action/login.php:209
+msgid "如果不是您本人操作，请忽略此邮件。"
+msgstr "If it is not your own operation, please ignore this email."
+
+#: action/login.php:209 action/login.php:240
+msgid "此致"
+msgstr "Sincerely"
+
+#: action/login.php:216
+msgid "邮件发送失败，请稍后重试"
+msgstr "Email delivery failed, please try again later"
+
+#: action/login.php:239
+msgid "密码修改成功"
+msgstr "The password was changed successfully"
+
+#: action/login.php:240
+msgid "您的密码修改成功，用户名："
+msgstr "Your password was successfully changed, username: "
+
+#: action/login.php:240
+msgid "请牢记密码，您可以点击下面的链接登录："
+msgstr "Please remember your password, you can click the link below to login: "
+
+#: action/login.php:276 action/user.php:62 action/user.php:91
+msgid "验证码错误"
+msgstr "Verification code error"
+
+#: action/login.php:313 action/user.php:112 action/user.php:212
+msgid "手机号格式错误"
+msgstr "The phone number format error"
+
+#: action/mocat.php:191 action/mocat.php:249 action/mocat.php:264
+#: category.php:389 erphpdown/mobantu.php:277 erphpdown/mobantu.php:547
+#: erphpdown/mobantu.php:1085 inc/shortcodes.php:313 inc/shortcodes.php:371
+#: inc/shortcodes.php:387 inc/shortcodes.php:591 inc/shortcodes.php:649
+#: inc/shortcodes.php:664 inc/shortcodes.php:874 inc/shortcodes.php:932
+#: inc/shortcodes.php:947 inc/widgets.php:424 inc/widgets.php:575
+#: module/content-list-title.php:29 module/content-list.php:69
+#: module/content-water.php:44 module/content-water.php:108
+#: module/content-water.php:125 module/content.php:58 module/content.php:122
+#: module/content.php:140 module/user-erphpdown.php:362 module/vip.php:44
+#: search.php:353 sidebar.php:435 sidebar.php:747 sidebar.php:1353
+#: template/all.php:330 template/homepage2.php:340 template/keywords.php:59
+#: template/vip.php:59 template/waterfall.php:280
+msgid "免费"
+msgstr "Free"
+
+#: action/mocat.php:264 inc/shortcodes.php:387 inc/shortcodes.php:664
+#: inc/shortcodes.php:947 module/content-list-title.php:26
+#: module/content-list.php:66 module/content-water.php:125
+#: module/content.php:140
+msgid "拼团"
+msgstr "Groupon"
+
+#: action/mocat.php:265 inc/shortcodes.php:388 inc/shortcodes.php:665
+#: inc/shortcodes.php:948 module/content-list.php:77
+#: module/content-water.php:126 module/content.php:141
+msgid "荐"
+msgstr "REC"
+
+#: action/photo.php:16
+msgid "图片大小至多500K"
+msgstr "Image size up to 500K"
+
+#: action/photo.php:41 action/photo.php:59
+msgid "上传成功"
+msgstr "Upload successful"
+
+#: action/photo.php:74 module/user-erphpdown.php:44 module/user.php:17
+msgid "暂未开放上传头像功能"
+msgstr "The upload avatar function is not yet available"
+
+#: action/user.php:55 action/user.php:149
+msgid "请输入一个新邮箱地址"
+msgstr "Please enter a new email address"
+
+#: action/user.php:65
+msgid "邮箱与验证码不对应"
+msgstr "The email address does not correspond to the verification code"
+
+#: action/user.php:97 action/user.php:186
+msgid "请输入一个新手机号"
+msgstr "Please enter a new phone number"
+
+#: action/user.php:100 action/user.php:189
+msgid "此手机号已被注册，请换一个"
+msgstr "This phone number has been registered"
+
+#: action/user.php:232
+msgid "抱歉，您暂时无法进行实名认证，请联系网站客服"
+msgstr ""
+"Sorry, you are temporarily unable to authenticate your real name, please "
+"contact our customer service."
+
+#: action/user.php:267
+msgid "认证成功"
+msgstr "The certification succeed"
+
+#: action/user.php:273
+msgid "认证失败，请检查信息是否输入正确"
+msgstr ""
+"Authentication failed, please check if the information is entered correctly"
+
+#: action/user.php:283
+msgid "请输入正确的姓名与身份证"
+msgstr "Please enter your correct name and ID"
+
+#: action/user.php:304
+msgid "修改失败"
+msgstr "Modify failed"
+
+#: action/user.php:376
+msgid "抱歉，仅支持在线支付升级"
+msgstr "Sorry, only online payment upgrades are supported"
+
+#: action/user.php:381 action/user.php:626 action/vip.php:19
+#, php-format
+msgid "您已经是%s，请勿重复升级"
+msgstr "You are already %s, do not repeat the upgrade"
+
+#: action/user.php:446 action/user.php:555 action/user.php:676
+#: action/user.php:826 action/user.php:1018
+msgid "VIP价格错误"
+msgstr "VIP price error"
+
+#: action/user.php:448 action/user.php:557 action/user.php:787
+#: inc/plugin/tuan.php:425
+msgid "余额不足，请先充值"
+msgstr "Insufficient balance, please recharge first"
+
+#: action/user.php:452 action/user.php:800 header.php:170
+#: module/user-erphpdown.php:72 module/user-erphpdown.php:1914
+msgid "升级VIP"
+msgstr "Upgrade VIP"
+
+#: action/user.php:457 action/user.php:805
+msgid "您好，您已成功升级成为VIP。"
+msgstr "Hello, you have successfully upgraded to VIP."
+
+#: action/user.php:469 action/user.php:472 action/user.php:475
+#: action/user.php:588 action/user.php:591 action/user.php:594
+#: action/user.php:816 action/user.php:819 action/user.php:822
+#: action/user.php:953 action/user.php:1043 action/vip.php:190
+msgid "升级失败"
+msgstr "Upgrade failed"
+
+#: action/user.php:501 action/user.php:979
+#, php-format
+msgid "您已经是此分类的%s，请勿重复升级"
+msgstr "You are already a %s in this category, do not repeat the upgrade"
+
+#: action/user.php:561
+msgid "升级分类VIP"
+msgstr "Upgrade category VIP"
+
+#: action/user.php:566
+msgid "您好，您已成功升级成为分类VIP。"
+msgstr "Hello, you have successfully upgraded to a category VIP."
+
+#: action/user.php:576 action/user.php:1023
+msgid "-包月"
+msgstr "-Monthly"
+
+#: action/user.php:578 action/user.php:1025
+msgid "-包季"
+msgstr "-Seasonly"
+
+#: action/user.php:580 action/user.php:1027
+msgid "-包年"
+msgstr "-Yearly"
+
+#: action/user.php:582 action/user.php:1029
+msgid "-终身"
+msgstr "-Lifelong"
+
+#: action/user.php:584 action/user.php:813
+msgid "VIP订单提醒 - "
+msgstr "VIP Order Reminder - "
+
+#: action/user.php:584 action/user.php:813
+#, php-format
+msgid "用户%s消费%s购买了%s"
+msgstr "The user %s purchase %s bought a %s"
+
+#: action/user.php:679
+msgid "余额不足，请直接在线支付"
+msgstr "Insufficient balance, please pay directly online"
+
+#: action/user.php:699 action/user.php:701 action/user.php:712
+#: action/user.php:722 action/user.php:729 action/user.php:737
+#: action/user.php:745 action/user.php:756 action/user.php:767
+#: action/user.php:848 action/user.php:850 action/user.php:861
+#: action/user.php:871 action/user.php:878 action/user.php:886
+#: action/user.php:894 action/user.php:905 action/user.php:916
+#: action/vip.php:89 action/vip.php:91 action/vip.php:102 action/vip.php:112
+#: action/vip.php:119 action/vip.php:127 action/vip.php:135 action/vip.php:146
+#: action/vip.php:157
+msgid "微信支付"
+msgstr "WeChat"
+
+#: action/user.php:705 action/user.php:708 action/user.php:715
+#: action/user.php:719 action/user.php:726 action/user.php:740
+#: action/user.php:748 action/user.php:759 action/user.php:770
+#: action/user.php:854 action/user.php:857 action/user.php:864
+#: action/user.php:868 action/user.php:875 action/user.php:889
+#: action/user.php:897 action/user.php:908 action/user.php:919
+#: action/vip.php:95 action/vip.php:98 action/vip.php:105 action/vip.php:109
+#: action/vip.php:116 action/vip.php:130 action/vip.php:138 action/vip.php:149
+#: action/vip.php:160 module/user-erphpdown.php:664
+msgid "支付宝"
+msgstr "Alipay"
+
+#: action/user.php:732 action/user.php:751 action/user.php:881
+#: action/user.php:900 action/vip.php:122 action/vip.php:141
+msgid "QQ钱包"
+msgstr "Qpay"
+
+#: action/user.php:762 action/user.php:911 action/vip.php:152
+msgid "USDT"
+msgstr "USDT"
+
+#: action/user.php:774 action/user.php:923 action/vip.php:164
+msgid "信用卡"
+msgstr "Credit card"
+
+#: action/user.php:780 action/user.php:929 action/vip.php:170
+msgid "新台币"
+msgstr "TWD"
+
+#: action/user.php:791 action/user.php:944 action/vip.php:179
+#: module/user-erphpdown.php:568
+msgid "激活码升级"
+msgstr "Activation code upgrade"
+
+#: action/user.php:795 action/user.php:948 action/user.php:1038
+#: action/vip.php:183
+msgid "优惠码："
+msgstr "Coupon: "
+
+#: action/user.php:795 action/user.php:948 action/user.php:1038
+#: action/vip.php:183
+msgid "使用"
+msgstr "Apply"
+
+#: action/user.php:841 action/user.php:1032
+msgid "请选择支付方式"
+msgstr "Please select a payment method"
+
+#: action/user.php:940 action/user.php:1035
+msgid "余额支付"
+msgstr "Balance"
+
+#: action/user.php:1067 action/vip.php:210
+msgid "激活码已过期"
+msgstr "The activation code has expired"
+
+#: action/user.php:1070 action/vip.php:213
+msgid "激活码已被使用，请换一个试试"
+msgstr "The activation code has been used"
+
+#: action/user.php:1073 action/vip.php:216
+msgid "激活码不存在"
+msgstr "The activation code does not exist"
+
+#: action/user.php:1098
+msgid "充值卡不存在"
+msgstr "The recharge card does not exist"
+
+#: action/user.php:1101
+msgid "充值卡已被使用，请换一个试试"
+msgstr "The recharge card has already been used"
+
+#: action/user.php:1124
+msgid "兑换失败，兑换扣除的"
+msgstr "If the exchange fails, the exchange will be deducted"
+
+#: action/user.php:1129
+msgid "不足"
+msgstr " insufficient"
+
+#: action/user.php:1131
+msgid "兑换"
+msgstr "exchange"
+
+#: action/user.php:1131
+msgid "兑换扣除"
+msgstr "Exchange deduction"
+
+#: action/user.php:1142
+msgid "兑换失败"
+msgstr "Exchange failed"
+
+#: action/user.php:1167
+msgid "解绑失败"
+msgstr "Unbind failed"
+
+#: action/user.php:1171
+msgid "为避免账号无法找回，请先绑定邮箱"
+msgstr ""
+"In order to avoid the account cannot be retrieved, please bind the email "
+"address first"
+
+#: action/user.php:1185
+msgid "您今天已经签过到了，请明儿再来"
+msgstr "You have already signed in today"
+
+#: action/user.php:1207
+msgid "签到奖励"
+msgstr "Checkin reward"
+
+#: action/user.php:1209
+msgid "签到成功 +"
+msgstr "Checkin successfully +"
+
+#: action/user.php:1213 action/user.php:1218
+msgid "签到失败"
+msgstr "Checkin failed"
+
+#: action/user.php:1242
+msgid "提现金额至少得满"
+msgstr "The withdrawal amount must be at least "
+
+#: action/user.php:1247
+msgid "请输入支付宝帐号和姓名"
+msgstr "Please enter your Alipay account and name"
+
+#: action/user.php:1252 inc/plugin/draw.php:320
+msgid "余额不足"
+msgstr "Insufficient balance"
+
+#: action/user.php:1265
+msgid "提现扣除"
+msgstr "Withdrawal deduction"
+
+#: action/user.php:1277
+msgid "你想干嘛？"
+msgstr "What do you want?"
+
+#: action/user.php:1286 action/user.php:1343
+msgid "提交失败"
+msgstr "Submit failed"
+
+#: action/user.php:1291 action/user.php:1353 action/user.php:1534
+#: template/tougao.php:35
+msgid "这也太快了吧，先喝杯咖啡？"
+msgstr "That's too fast, drink a cup of coffee first?"
+
+#: action/user.php:1316 action/user.php:1421 action/user.php:1498
+#: action/user.php:1812 action/user.php:1832
+msgid "提交成功"
+msgstr "Submit successfully"
+
+#: action/user.php:1319 action/user.php:1424 action/user.php:1501
+msgid "提交成功，请等待管理员审核！"
+msgstr ""
+"The submission is successful, please wait for the administrator to review it!"
+
+#: action/user.php:1323 action/user.php:1330 action/user.php:1428
+#: action/user.php:1434 action/user.php:1505 action/user.php:1512
+#: template/tougao.php:114 template/tougao.php:190
+msgid "提交失败，请稍后重试！"
+msgstr "Submit failed, please try again later"
+
+#: action/user.php:1326 action/user.php:1431 action/user.php:1508
+msgid "提交失败，请完善标题、分类、正文！"
+msgstr "Submission fails, please improve the title, category, and content!"
+
+#: action/user.php:1348 action/user.php:1529
+msgid "抱歉，暂无投稿权限"
+msgstr "Sorry, we don't have permission to contribute at this time"
+
+#: action/user.php:1525
+msgid "保存失败"
+msgstr "Save failed"
+
+#: action/user.php:1600 action/user.php:1671
+msgid "保存成功！"
+msgstr "Save successfully!"
+
+#: action/user.php:1603 action/user.php:1609 action/user.php:1674
+#: action/user.php:1681
+msgid "保存失败，请稍后重试！"
+msgstr "Save failed, please try again later"
+
+#: action/user.php:1606 action/user.php:1677
+msgid "保存失败，请完善标题、分类、正文！"
+msgstr "Failed to save, please improve the title, category, and content!"
+
+#: action/user.php:1733
+msgid "您尚有工单未完成，请先完成或直接回复"
+msgstr ""
+"You still have a ticket that has not been completed, please complete it "
+"first or reply directly"
+
+#: action/user.php:1738
+msgid "有新工单"
+msgstr "There are new tickets"
+
+#: action/user.php:1739 inc/base.php:1731
+msgid "管理员"
+msgstr "Administrator"
+
+#: action/user.php:1739
+msgid "刚才有人提交了新工单"
+msgstr "Someone just submitted a new ticket"
+
+#: action/user.php:1739 action/user.php:1772 action/user.php:1781
+msgid "工单ID："
+msgstr "Ticket ID: "
+
+#: action/user.php:1739 action/user.php:1772 action/user.php:1781
+msgid "查看工单"
+msgstr "View the ticket"
+
+#: action/user.php:1739 action/user.php:1772 action/user.php:1781
+msgid "此邮件由系统自动发出，请勿回复！"
+msgstr "This email is sent automatically by the system, please do not reply!"
+
+#: action/user.php:1765
+msgid "抱歉，工单已关闭"
+msgstr "Sorry, the ticket is closed"
+
+#: action/user.php:1769
+msgid "您好，您的工单有新回复。"
+msgstr "Hello, there is a new reply to your ticket."
+
+#: action/user.php:1769 inc/base.php:1932 inc/base.php:1936
+#: module/slider.php:40
+msgid "查看详情"
+msgstr "View details"
+
+#: action/user.php:1771 action/user.php:1772
+msgid "您的工单有新回复"
+msgstr "There is a new response to your ticket"
+
+#: action/user.php:1780 action/user.php:1781
+msgid "有工单待回复"
+msgstr "There are tickets to be responded to"
+
+#: action/user.php:1787
+msgid "回复成功"
+msgstr "Reply successfully"
+
+#: action/user.php:1790
+msgid "回复失败，请稍后重试"
+msgstr "Reply failed, please try again later"
+
+#: action/user.php:1795
+msgid "回复异常"
+msgstr "Reply exception"
+
+#: action/user.php:1815 action/user.php:1835
+msgid "提交失败，请稍后重试"
+msgstr "Submit failed, please try again later"
+
+#: action/user.php:1819 action/user.php:1839
+msgid "工单异常"
+msgstr "The ticket is abnormal"
+
+#: action/user.php:1861
+msgid "上传的图片不能大于1M"
+msgstr "Image size up to 1M"
+
+#: action/user.php:1889
+msgid "图片格式只支持.jpeg .jpg .png .gif"
+msgstr "Image formats are only supported for .jpeg .jpg .png .gif"
+
+#: action/vip.php:186
+msgid "未登录说明：VIP状态以您的IP为准，请勿改变IP"
+msgstr ""
+"Instructions for not logged in: The VIP status is based on your IP, please "
+"do not change the IP"
+
+#: archive-blog.php:4 inc/post-type.php:4 module/home-blogs.php:3
+msgid "博客"
+msgstr "Blog"
+
+#: archive-question.php:4 inc/post-type.php:42
+msgid "问答"
+msgstr "Question"
+
+#: archive-question.php:14 taxonomy-question_category.php:14
+msgid "最新问题"
+msgstr "Latest question"
+
+#: archive-question.php:14 sidebar.php:1927 taxonomy-question_category.php:14
+msgid "我要提问"
+msgstr "Ask now"
+
+#: archive.php:4
+msgid "年"
+msgstr "Year"
+
+#: archive.php:4
+msgid "的存档"
+msgstr " archives"
+
+#: category.php:3 single.php:4
+msgid "此内容仅限VIP查看"
+msgstr "The content is for VIP only"
+
+#: category.php:53 tag.php:15 taxonomy-topic.php:24
+msgid "篇"
+msgstr "articles"
+
+#: category.php:57 inc/base.php:2233 module/banner.php:17 module/slider.php:192
+#: search.php:67
+msgid "搜索一下"
+msgstr "Search"
+
+#: category.php:110 category.php:127 category.php:145 category.php:165
+#: category.php:187 category.php:210 category.php:258 category.php:295
+#: category.php:388 inc/shortcodes.php:149 inc/shortcodes.php:159
+#: search.php:101 search.php:125 search.php:150 search.php:173 search.php:218
+#: search.php:253 search.php:352 template/all-vip.php:63
+#: template/all-vip.php:87 template/all-vip.php:112 template/all-vip.php:135
+#: template/all-vip.php:196 template/all-vip.php:232 template/all.php:63
+#: template/all.php:87 template/all.php:112 template/all.php:135
+#: template/all.php:196 template/all.php:232 template/all.php:329
+#: template/homepage2.php:73 template/homepage2.php:97
+#: template/homepage2.php:122 template/homepage2.php:145
+#: template/homepage2.php:206 template/homepage2.php:242
+#: template/homepage2.php:339 template/keywords.php:58 template/task.php:40
+#: template/task.php:53 template/task.php:82 template/task.php:108
+#: template/task.php:127 template/tuan.php:63 template/tuan.php:87
+#: template/tuan.php:112 template/tuan.php:135 template/tuan.php:182
+#: template/tuan.php:217 template/waterfall.php:28 template/waterfall.php:52
+#: template/waterfall.php:77 template/waterfall.php:100
+#: template/waterfall.php:147 template/waterfall.php:182
+#: template/waterfall.php:279
+msgid "全部"
+msgstr "All"
+
+#: category.php:367 module/user-erphpdown.php:138 module/user-erphpdown.php:188
+#: module/user-erphpdown.php:599 search.php:331 template/all.php:308
+#: template/homepage2.php:318 template/keywords.php:37 template/tougao.php:345
+#: template/waterfall.php:258
+msgid "价格"
+msgstr "Price"
+
+#: category.php:390 search.php:354 template/all.php:331
+#: template/homepage2.php:341 template/keywords.php:60
+#: template/waterfall.php:281
+msgid "收费"
+msgstr "Fee"
+
+#: category.php:392 search.php:356 template/all.php:333
+#: template/homepage2.php:343 template/keywords.php:62 template/tougao.php:338
+#: template/waterfall.php:283
+msgid "VIP免费"
+msgstr "VIP free"
+
+#: category.php:393 search.php:357 template/all.php:334
+#: template/homepage2.php:344 template/keywords.php:63 template/tougao.php:335
+#: template/waterfall.php:284
+msgid "VIP优惠"
+msgstr "VIP discount"
+
+#: category.php:394 category.php:395 category.php:396 erphpdown/mobantu.php:340
+#: erphpdown/mobantu.php:344 erphpdown/mobantu.php:348
+#: erphpdown/mobantu.php:350 erphpdown/mobantu.php:352
+#: erphpdown/mobantu.php:354 erphpdown/mobantu.php:356
+#: erphpdown/mobantu.php:382 erphpdown/mobantu.php:386
+#: erphpdown/mobantu.php:390 erphpdown/mobantu.php:392
+#: erphpdown/mobantu.php:394 erphpdown/mobantu.php:396
+#: erphpdown/mobantu.php:398 erphpdown/mobantu.php:465
+#: erphpdown/mobantu.php:469 erphpdown/mobantu.php:473
+#: erphpdown/mobantu.php:475 erphpdown/mobantu.php:477
+#: erphpdown/mobantu.php:479 erphpdown/mobantu.php:481
+#: erphpdown/mobantu.php:613 erphpdown/mobantu.php:617
+#: erphpdown/mobantu.php:621 erphpdown/mobantu.php:623
+#: erphpdown/mobantu.php:625 erphpdown/mobantu.php:627
+#: erphpdown/mobantu.php:629 erphpdown/mobantu.php:655
+#: erphpdown/mobantu.php:659 erphpdown/mobantu.php:663
+#: erphpdown/mobantu.php:665 erphpdown/mobantu.php:667
+#: erphpdown/mobantu.php:669 erphpdown/mobantu.php:671
+#: erphpdown/mobantu.php:752 erphpdown/mobantu.php:756
+#: erphpdown/mobantu.php:760 erphpdown/mobantu.php:762
+#: erphpdown/mobantu.php:764 erphpdown/mobantu.php:766
+#: erphpdown/mobantu.php:768 erphpdown/mobantu.php:996
+#: erphpdown/mobantu.php:998 erphpdown/mobantu.php:1151
+#: erphpdown/mobantu.php:1155 erphpdown/mobantu.php:1159
+#: erphpdown/mobantu.php:1161 erphpdown/mobantu.php:1163
+#: erphpdown/mobantu.php:1165 erphpdown/mobantu.php:1167
+#: erphpdown/mobantu.php:1192 erphpdown/mobantu.php:1196
+#: erphpdown/mobantu.php:1200 erphpdown/mobantu.php:1202
+#: erphpdown/mobantu.php:1204 erphpdown/mobantu.php:1206
+#: erphpdown/mobantu.php:1208 erphpdown/mobantu.php:1290
+#: erphpdown/mobantu.php:1294 erphpdown/mobantu.php:1298
+#: erphpdown/mobantu.php:1300 erphpdown/mobantu.php:1302
+#: erphpdown/mobantu.php:1304 erphpdown/mobantu.php:1306
+#: module/post-box.php:322 module/post-box.php:415 module/post-box.php:419
+#: module/post-box.php:423 module/post-box.php:425 module/post-box.php:427
+#: module/post-box.php:429 module/post-box.php:431 module/post-box.php:466
+#: module/post-box.php:470 module/post-box.php:472 module/post-box.php:474
+#: module/post-box.php:481 module/post-box.php:486 module/post-box.php:491
+#: module/post-box.php:664 module/post-box.php:668 module/post-box.php:672
+#: module/post-box.php:674 module/post-box.php:676 module/post-box.php:678
+#: module/post-box.php:680 module/post-box.php:715 module/post-box.php:719
+#: module/post-box.php:721 module/post-box.php:723 module/post-box.php:730
+#: module/post-box.php:735 module/post-box.php:740 search.php:358
+#: search.php:359 search.php:360 sidebar.php:497 sidebar.php:501
+#: sidebar.php:505 sidebar.php:507 sidebar.php:509 sidebar.php:511
+#: sidebar.php:513 sidebar.php:541 sidebar.php:545 sidebar.php:549
+#: sidebar.php:564 sidebar.php:567 sidebar.php:569 sidebar.php:571
+#: sidebar.php:647 sidebar.php:651 sidebar.php:655 sidebar.php:670
+#: sidebar.php:673 sidebar.php:675 sidebar.php:677 sidebar.php:812
+#: sidebar.php:816 sidebar.php:820 sidebar.php:822 sidebar.php:824
+#: sidebar.php:826 sidebar.php:828 sidebar.php:856 sidebar.php:860
+#: sidebar.php:864 sidebar.php:879 sidebar.php:882 sidebar.php:884
+#: sidebar.php:886 sidebar.php:969 sidebar.php:973 sidebar.php:977
+#: sidebar.php:992 sidebar.php:995 sidebar.php:997 sidebar.php:999
+#: sidebar.php:1241 sidebar.php:1243 sidebar.php:1412 sidebar.php:1416
+#: sidebar.php:1420 sidebar.php:1422 sidebar.php:1424 sidebar.php:1426
+#: sidebar.php:1428 sidebar.php:1454 sidebar.php:1458 sidebar.php:1462
+#: sidebar.php:1477 sidebar.php:1480 sidebar.php:1482 sidebar.php:1484
+#: sidebar.php:1573 sidebar.php:1577 sidebar.php:1581 sidebar.php:1596
+#: sidebar.php:1599 sidebar.php:1601 sidebar.php:1603 template/all.php:335
+#: template/all.php:336 template/all.php:337 template/homepage2.php:345
+#: template/homepage2.php:346 template/homepage2.php:347
+#: template/keywords.php:64 template/keywords.php:65 template/keywords.php:66
+#: template/tougao.php:339 template/tougao.php:340 template/tougao.php:341
+#: template/waterfall.php:285 template/waterfall.php:286
+#: template/waterfall.php:287
+#, php-format
+msgid "%s免费"
+msgstr "%s free"
+
+#: category.php:406 search.php:369 template/all-vip.php:302
+#: template/all.php:345 template/homepage2.php:355 template/keywords.php:74
+#: template/tuan.php:287 template/waterfall.php:295
+msgid "排序"
+msgstr "Sort"
+
+#: category.php:425 search.php:388 template/all-vip.php:321
+#: template/all.php:364 template/homepage2.php:374 template/keywords.php:93
+#: template/tuan.php:306 template/waterfall.php:314
+msgid "最新"
+msgstr "Newest"
+
+#: category.php:426 search.php:389 template/all-vip.php:322
+#: template/all.php:365 template/homepage2.php:375 template/keywords.php:94
+#: template/tuan.php:307 template/waterfall.php:315
+msgid "更新"
+msgstr "Updated"
+
+#: category.php:427 search.php:390 template/all-vip.php:323
+#: template/all.php:366 template/homepage2.php:376 template/keywords.php:95
+#: template/tuan.php:308 template/waterfall.php:316
+msgid "推荐"
+msgstr "Recommend"
+
+#: category.php:428 erphpdown/mobantu.php:982 erphpdown/mobantu.php:1522
+#: module/user-erphpdown.php:323 module/user-erphpdown.php:876 search.php:391
+#: template/all-vip.php:324 template/all.php:367 template/homepage2.php:377
+#: template/keywords.php:96 template/tuan.php:309 template/waterfall.php:317
+msgid "下载"
+msgstr "Download"
+
+#: category.php:429 search.php:392 template/all-vip.php:325
+#: template/all.php:368 template/homepage2.php:378 template/keywords.php:97
+#: template/tuan.php:310 template/waterfall.php:318
+msgid "浏览"
+msgstr "Views"
+
+#: category.php:430 comments.php:9 header.php:215 search.php:393
+#: template/all-vip.php:326 template/all.php:369 template/homepage2.php:379
+#: template/keywords.php:98 template/tuan.php:311 template/waterfall.php:319
+msgid "评论"
+msgstr "Comments"
+
+#: category.php:431 search.php:394 template/all-vip.php:327
+#: template/all.php:370 template/homepage2.php:380 template/keywords.php:99
+#: template/tuan.php:312 template/waterfall.php:320
+msgid "随机"
+msgstr "Random"
+
+#: comments.php:11
+msgid "留言"
+msgstr "Comments"
+
+#: comments.php:13
+msgid "回答"
+msgstr "Reply"
+
+#: comments.php:27
+msgid "请先"
+msgstr "Please first"
+
+#: comments.php:27 header.php:103 inc/base.php:150 inc/shortcodes.php:1630
+#: inc/shortcodes.php:1634 inc/shortcodes.php:1894 inc/shortcodes.php:1898
+#: module/audio.php:410 module/audio.php:412 module/audio.php:414
+#: module/audio.php:416 module/audio.php:418 module/audio.php:420
+#: module/audio.php:422 module/audio.php:424 module/audio.php:426
+#: module/audio.php:428 module/audio.php:460 module/audio.php:466
+#: module/audio.php:468 module/login.php:17 module/login.php:61
+#: module/login.php:65 module/login.php:80 module/post-box.php:589
+#: module/post-box.php:592 module/post-box.php:594 module/post-box.php:840
+#: module/post-box.php:843 module/post-box.php:846 module/post-box.php:849
+#: module/post-box.php:852 module/post-box.php:855 module/post-box.php:858
+#: module/post-box.php:861 module/post-box.php:864 module/post-box.php:867
+#: module/post-box.php:911 module/post-box.php:918 module/post-box.php:920
+#: module/video.php:365 module/video.php:367 module/video.php:369
+#: module/video.php:371 module/video.php:373 module/video.php:375
+#: module/video.php:377 module/video.php:379 module/video.php:381
+#: module/video.php:383 module/video.php:415 module/video.php:421
+#: module/video.php:423 template/login.php:109 template/login.php:307
+#: template/login.php:404 template/login.php:437 template/login.php:470
+msgid "登录"
+msgstr "Login"
+
+#: comments.php:29
+msgid "评论已关闭！"
+msgstr "Comments are closed!"
+
+#: comments.php:46
+msgid "更换"
+msgstr "Exchange"
+
+#: comments.php:50
+msgid "取消"
+msgstr "Cancel"
+
+#: comments.php:60 template/ask.php:66 template/tougao.php:368
+#: template/tougao.php:370
+msgid "提交"
+msgstr "Submit"
+
+#: comments.php:67 module/user-erphpdown.php:1193 module/user.php:230
+msgid "昵称"
+msgstr "Nickname"
+
+#: comments.php:68 module/login.php:33 module/user-erphpdown.php:1257
+#: module/user.php:250 template/login.php:168 template/login.php:332
+msgid "邮箱"
+msgstr "Email"
+
+#: comments.php:69
+msgid "网址"
+msgstr "Website"
+
+#: erphpdown/mobantu.php:80 erphpdown/mobantu.php:906 module/post-box.php:240
+#: module/post-box.php:244 module/post-box.php:339 module/post-box.php:962
+msgid "资源下载"
+msgstr "Resource download"
+
+#: erphpdown/mobantu.php:81 erphpdown/mobantu.php:1065
+msgid "内容查看"
+msgstr "Content view"
+
+#: erphpdown/mobantu.php:82 erphpdown/mobantu.php:1429 module/post-box.php:953
+#: sidebar.php:1744
+msgid "自动发卡"
+msgstr "Automatic card issuance"
+
+#: erphpdown/mobantu.php:84 module/audio.php:70 module/post-box.php:144
+#: module/video.php:76 sidebar.php:90
+#, php-format
+msgid "%s折扣"
+msgstr ""
+
+#: erphpdown/mobantu.php:133 erphpdown/mobantu.php:144
+#: erphpdown/mobantu.php:154 erphpdown/mobantu.php:161
+#: erphpdown/mobantu.php:941 erphpdown/mobantu.php:952
+#: erphpdown/mobantu.php:962 erphpdown/mobantu.php:969 module/post-box.php:195
+#: module/post-box.php:206 module/post-box.php:216 module/post-box.php:223
+#: module/post-box.php:274 module/post-box.php:285 module/post-box.php:295
+#: module/post-box.php:302 template/tougao.php:350
+msgid "下载地址"
+msgstr "Download url"
+
+#: erphpdown/mobantu.php:133 erphpdown/mobantu.php:135
+#: erphpdown/mobantu.php:138 erphpdown/mobantu.php:144
+#: erphpdown/mobantu.php:148 erphpdown/mobantu.php:154
+#: erphpdown/mobantu.php:156 erphpdown/mobantu.php:158
+#: erphpdown/mobantu.php:161 erphpdown/mobantu.php:229
+#: erphpdown/mobantu.php:379 erphpdown/mobantu.php:508
+#: erphpdown/mobantu.php:516 erphpdown/mobantu.php:652
+#: erphpdown/mobantu.php:793 erphpdown/mobantu.php:809
+#: erphpdown/mobantu.php:814 erphpdown/mobantu.php:823
+#: erphpdown/mobantu.php:941 erphpdown/mobantu.php:943
+#: erphpdown/mobantu.php:946 erphpdown/mobantu.php:952
+#: erphpdown/mobantu.php:956 erphpdown/mobantu.php:962
+#: erphpdown/mobantu.php:964 erphpdown/mobantu.php:966
+#: erphpdown/mobantu.php:969 module/post-box.php:195 module/post-box.php:197
+#: module/post-box.php:200 module/post-box.php:206 module/post-box.php:210
+#: module/post-box.php:216 module/post-box.php:218 module/post-box.php:220
+#: module/post-box.php:223 module/post-box.php:274 module/post-box.php:276
+#: module/post-box.php:279 module/post-box.php:285 module/post-box.php:289
+#: module/post-box.php:295 module/post-box.php:297 module/post-box.php:299
+#: module/post-box.php:302 module/post-box.php:342 module/post-box.php:454
+#: module/post-box.php:583 module/post-box.php:598 module/post-box.php:602
+#: module/post-box.php:703 module/post-box.php:833 module/post-box.php:841
+#: module/post-box.php:844 module/post-box.php:847 module/post-box.php:850
+#: module/post-box.php:853 module/post-box.php:856 module/post-box.php:859
+#: module/post-box.php:862 module/post-box.php:865 module/post-box.php:868
+#: module/post-box.php:898 module/post-box.php:909 module/post-box.php:912
+#: module/post-box.php:923 module/post-box.php:931 sidebar.php:138
+#: sidebar.php:140 sidebar.php:143 sidebar.php:149 sidebar.php:153
+#: sidebar.php:159 sidebar.php:161 sidebar.php:163 sidebar.php:166
+#: sidebar.php:234 sidebar.php:536 sidebar.php:705 sidebar.php:712
+#: sidebar.php:851 sidebar.php:1024 sidebar.php:1040 sidebar.php:1043
+#: sidebar.php:1053 sidebar.php:1191 sidebar.php:1193 sidebar.php:1196
+#: sidebar.php:1202 sidebar.php:1206 sidebar.php:1212 sidebar.php:1214
+#: sidebar.php:1216 sidebar.php:1219
+msgid "立即下载"
+msgstr "Download"
+
+#: erphpdown/mobantu.php:138 erphpdown/mobantu.php:148
+#: erphpdown/mobantu.php:158 erphpdown/mobantu.php:946
+#: erphpdown/mobantu.php:956 erphpdown/mobantu.php:975 module/post-box.php:200
+#: module/post-box.php:210 module/post-box.php:220 module/post-box.php:279
+#: module/post-box.php:289 module/post-box.php:308 sidebar.php:143
+#: sidebar.php:153 sidebar.php:163 sidebar.php:1196 sidebar.php:1206
+#: sidebar.php:1216 sidebar.php:1225
+msgid "复制"
+msgstr "Copy"
+
+#: erphpdown/mobantu.php:148 erphpdown/mobantu.php:975 module/post-box.php:210
+#: module/post-box.php:308 sidebar.php:153
+msgid "提取码："
+msgstr "Extraction code: "
+
+#: erphpdown/mobantu.php:256 erphpdown/mobantu.php:527
+#: erphpdown/mobantu.php:902 module/post-box.php:236 module/post-box.php:369
+#: sidebar.php:414 sidebar.php:727 sidebar.php:1153
+msgid "点击检测网盘有效后购买"
+msgstr "Click to check that the network disk is valid and then purchase"
+
+#: erphpdown/mobantu.php:263 erphpdown/mobantu.php:266
+#: erphpdown/mobantu.php:268 erphpdown/mobantu.php:270
+#: erphpdown/mobantu.php:272 erphpdown/mobantu.php:277
+#: erphpdown/mobantu.php:280 erphpdown/mobantu.php:282
+#: erphpdown/mobantu.php:284 erphpdown/mobantu.php:286
+#: erphpdown/mobantu.php:533 erphpdown/mobantu.php:536
+#: erphpdown/mobantu.php:538 erphpdown/mobantu.php:540
+#: erphpdown/mobantu.php:542 erphpdown/mobantu.php:547
+#: erphpdown/mobantu.php:550 erphpdown/mobantu.php:552
+#: erphpdown/mobantu.php:554 erphpdown/mobantu.php:556 module/post-box.php:322
+#: module/post-box.php:324 module/post-box.php:378 module/post-box.php:592
+#: module/post-box.php:624 module/post-box.php:896 module/post-box.php:901
+#: module/post-box.php:918
+msgid "下载价格"
+msgstr "Price"
+
+#: erphpdown/mobantu.php:266 erphpdown/mobantu.php:268
+#: erphpdown/mobantu.php:270 erphpdown/mobantu.php:272
+#: erphpdown/mobantu.php:536 erphpdown/mobantu.php:538
+#: erphpdown/mobantu.php:540 erphpdown/mobantu.php:542
+#: erphpdown/mobantu.php:550 erphpdown/mobantu.php:552
+#: erphpdown/mobantu.php:554 erphpdown/mobantu.php:556
+#: erphpdown/mobantu.php:1074 erphpdown/mobantu.php:1076
+#: erphpdown/mobantu.php:1078 erphpdown/mobantu.php:1080
+#: erphpdown/mobantu.php:1088 erphpdown/mobantu.php:1090
+#: erphpdown/mobantu.php:1092 erphpdown/mobantu.php:1094 sidebar.php:424
+#: sidebar.php:426 sidebar.php:428 sidebar.php:430 sidebar.php:438
+#: sidebar.php:440 sidebar.php:442 sidebar.php:444 sidebar.php:736
+#: sidebar.php:738 sidebar.php:740 sidebar.php:742 sidebar.php:750
+#: sidebar.php:752 sidebar.php:754 sidebar.php:756 sidebar.php:1342
+#: sidebar.php:1344 sidebar.php:1346 sidebar.php:1348 sidebar.php:1356
+#: sidebar.php:1358 sidebar.php:1360 sidebar.php:1362
+#, php-format
+msgid "<span>%s</span>专享"
+msgstr "<span>%s</span> only"
+
+#: erphpdown/mobantu.php:311 erphpdown/mobantu.php:503
+#: erphpdown/mobantu.php:511 erphpdown/mobantu.php:581
+#: erphpdown/mobantu.php:799 erphpdown/mobantu.php:803
+#: erphpdown/mobantu.php:817 erphpdown/mobantu.php:998
+#: erphpdown/mobantu.php:1004 erphpdown/mobantu.php:1119
+#: erphpdown/mobantu.php:1273 erphpdown/mobantu.php:1340
+#: erphpdown/mobantu.php:1355 erphpdown/mobantu.php:1431 module/audio.php:110
+#: module/audio.php:112 module/audio.php:349 module/audio.php:355
+#: module/audio.php:361 module/audio.php:367 module/audio.php:374
+#: module/audio.php:381 module/audio.php:386 module/audio.php:457
+#: module/post-box.php:330 module/post-box.php:407 module/post-box.php:653
+#: module/post-box.php:905 module/post-box.php:956 module/video.php:131
+#: module/video.php:133 module/video.php:312 module/video.php:318
+#: module/video.php:324 module/video.php:330 module/video.php:337
+#: module/video.php:344 module/video.php:349 module/video.php:412
+#: sidebar.php:51 sidebar.php:468 sidebar.php:780 sidebar.php:1380
+msgid "立即购买"
+msgstr "Buy now"
+
+#: erphpdown/mobantu.php:313 erphpdown/mobantu.php:583
+#: erphpdown/mobantu.php:1121 module/post-box.php:409 module/post-box.php:655
+#: sidebar.php:470 sidebar.php:782 sidebar.php:1382
+msgid "再次购买"
+msgstr "Buy again"
+
+#: erphpdown/mobantu.php:318 erphpdown/mobantu.php:321
+#: erphpdown/mobantu.php:325 erphpdown/mobantu.php:328
+#: erphpdown/mobantu.php:331 erphpdown/mobantu.php:590
+#: erphpdown/mobantu.php:593 erphpdown/mobantu.php:597
+#: erphpdown/mobantu.php:600 erphpdown/mobantu.php:603
+#: erphpdown/mobantu.php:746 erphpdown/mobantu.php:747
+#: erphpdown/mobantu.php:748 erphpdown/mobantu.php:749
+#: erphpdown/mobantu.php:996 erphpdown/mobantu.php:998
+#: erphpdown/mobantu.php:1126 erphpdown/mobantu.php:1129
+#: erphpdown/mobantu.php:1133 erphpdown/mobantu.php:1136
+#: erphpdown/mobantu.php:1139 erphpdown/mobantu.php:1284
+#: erphpdown/mobantu.php:1285 erphpdown/mobantu.php:1286
+#: erphpdown/mobantu.php:1287 module/audio.php:110 module/audio.php:301
+#: module/audio.php:318 module/audio.php:323 module/audio.php:328
+#: module/audio.php:339 module/audio.php:341 module/audio.php:343
+#: module/audio.php:345 module/audio.php:351 module/audio.php:357
+#: module/audio.php:363 module/audio.php:369 module/audio.php:376
+#: module/audio.php:383 module/audio.php:455 module/post-box.php:322
+#: module/post-box.php:457 module/post-box.php:461 module/post-box.php:706
+#: module/post-box.php:710 module/video.php:131 module/video.php:260
+#: module/video.php:264 module/video.php:281 module/video.php:286
+#: module/video.php:291 module/video.php:302 module/video.php:304
+#: module/video.php:306 module/video.php:308 module/video.php:314
+#: module/video.php:320 module/video.php:326 module/video.php:332
+#: module/video.php:339 module/video.php:346 module/video.php:410
+#: sidebar.php:475 sidebar.php:478 sidebar.php:482 sidebar.php:485
+#: sidebar.php:488 sidebar.php:641 sidebar.php:642 sidebar.php:643
+#: sidebar.php:644 sidebar.php:787 sidebar.php:790 sidebar.php:794
+#: sidebar.php:797 sidebar.php:800 sidebar.php:963 sidebar.php:964
+#: sidebar.php:965 sidebar.php:966 sidebar.php:1241 sidebar.php:1243
+#: sidebar.php:1387 sidebar.php:1390 sidebar.php:1394 sidebar.php:1397
+#: sidebar.php:1400 sidebar.php:1567 sidebar.php:1568 sidebar.php:1569
+#: sidebar.php:1570
+#, php-format
+msgid "升级%s"
+msgstr "Upgrade %s"
+
+#: erphpdown/mobantu.php:342 erphpdown/mobantu.php:344
+#: erphpdown/mobantu.php:374 erphpdown/mobantu.php:384
+#: erphpdown/mobantu.php:386 erphpdown/mobantu.php:467
+#: erphpdown/mobantu.php:469 erphpdown/mobantu.php:615
+#: erphpdown/mobantu.php:617 erphpdown/mobantu.php:647
+#: erphpdown/mobantu.php:657 erphpdown/mobantu.php:659
+#: erphpdown/mobantu.php:716 erphpdown/mobantu.php:720
+#: erphpdown/mobantu.php:754 erphpdown/mobantu.php:756
+#: erphpdown/mobantu.php:786 erphpdown/mobantu.php:1153
+#: erphpdown/mobantu.php:1155 erphpdown/mobantu.php:1185
+#: erphpdown/mobantu.php:1194 erphpdown/mobantu.php:1196
+#: erphpdown/mobantu.php:1253 erphpdown/mobantu.php:1257
+#: erphpdown/mobantu.php:1292 erphpdown/mobantu.php:1294
+#: erphpdown/mobantu.php:1324 module/post-box.php:417 module/post-box.php:419
+#: module/post-box.php:449 module/post-box.php:468 module/post-box.php:470
+#: module/post-box.php:551 module/post-box.php:666 module/post-box.php:668
+#: module/post-box.php:698 module/post-box.php:717 module/post-box.php:719
+#: module/post-box.php:800 sidebar.php:499 sidebar.php:501 sidebar.php:531
+#: sidebar.php:543 sidebar.php:545 sidebar.php:649 sidebar.php:651
+#: sidebar.php:814 sidebar.php:816 sidebar.php:846 sidebar.php:858
+#: sidebar.php:860 sidebar.php:931 sidebar.php:935 sidebar.php:971
+#: sidebar.php:973 sidebar.php:1017 sidebar.php:1414 sidebar.php:1416
+#: sidebar.php:1446 sidebar.php:1456 sidebar.php:1458 sidebar.php:1529
+#: sidebar.php:1533 sidebar.php:1575 sidebar.php:1577 sidebar.php:1621
+#, php-format
+msgid "%s 5折"
+msgstr "%s half price"
+
+#: erphpdown/mobantu.php:346 erphpdown/mobantu.php:348
+#: erphpdown/mobantu.php:376 erphpdown/mobantu.php:388
+#: erphpdown/mobantu.php:390 erphpdown/mobantu.php:471
+#: erphpdown/mobantu.php:473 erphpdown/mobantu.php:619
+#: erphpdown/mobantu.php:621 erphpdown/mobantu.php:649
+#: erphpdown/mobantu.php:661 erphpdown/mobantu.php:663
+#: erphpdown/mobantu.php:724 erphpdown/mobantu.php:728
+#: erphpdown/mobantu.php:758 erphpdown/mobantu.php:760
+#: erphpdown/mobantu.php:788 erphpdown/mobantu.php:1157
+#: erphpdown/mobantu.php:1159 erphpdown/mobantu.php:1187
+#: erphpdown/mobantu.php:1198 erphpdown/mobantu.php:1200
+#: erphpdown/mobantu.php:1261 erphpdown/mobantu.php:1265
+#: erphpdown/mobantu.php:1296 erphpdown/mobantu.php:1298
+#: erphpdown/mobantu.php:1326 module/post-box.php:421 module/post-box.php:423
+#: module/post-box.php:451 module/post-box.php:472 module/post-box.php:476
+#: module/post-box.php:562 module/post-box.php:670 module/post-box.php:672
+#: module/post-box.php:700 module/post-box.php:721 module/post-box.php:725
+#: module/post-box.php:811 sidebar.php:503 sidebar.php:505 sidebar.php:533
+#: sidebar.php:547 sidebar.php:549 sidebar.php:653 sidebar.php:655
+#: sidebar.php:818 sidebar.php:820 sidebar.php:848 sidebar.php:862
+#: sidebar.php:864 sidebar.php:939 sidebar.php:943 sidebar.php:975
+#: sidebar.php:977 sidebar.php:1019 sidebar.php:1418 sidebar.php:1420
+#: sidebar.php:1448 sidebar.php:1460 sidebar.php:1462 sidebar.php:1537
+#: sidebar.php:1541 sidebar.php:1579 sidebar.php:1581 sidebar.php:1623
+#, php-format
+msgid "%s 8折"
+msgstr "%s 20 percent off"
+
+#: erphpdown/mobantu.php:358 erphpdown/mobantu.php:360
+#: erphpdown/mobantu.php:362 erphpdown/mobantu.php:364
+#: erphpdown/mobantu.php:402 erphpdown/mobantu.php:404
+#: erphpdown/mobantu.php:406 erphpdown/mobantu.php:408
+#: erphpdown/mobantu.php:483 erphpdown/mobantu.php:485
+#: erphpdown/mobantu.php:487 erphpdown/mobantu.php:489
+#: erphpdown/mobantu.php:631 erphpdown/mobantu.php:633
+#: erphpdown/mobantu.php:635 erphpdown/mobantu.php:637
+#: erphpdown/mobantu.php:675 erphpdown/mobantu.php:677
+#: erphpdown/mobantu.php:679 erphpdown/mobantu.php:681
+#: erphpdown/mobantu.php:770 erphpdown/mobantu.php:772
+#: erphpdown/mobantu.php:774 erphpdown/mobantu.php:776 module/post-box.php:433
+#: module/post-box.php:435 module/post-box.php:437 module/post-box.php:439
+#: module/post-box.php:495 module/post-box.php:498 module/post-box.php:501
+#: module/post-box.php:504 module/post-box.php:682 module/post-box.php:684
+#: module/post-box.php:686 module/post-box.php:688 module/post-box.php:744
+#: module/post-box.php:747 module/post-box.php:750 module/post-box.php:753
+#: sidebar.php:515 sidebar.php:517 sidebar.php:519 sidebar.php:521
+#: sidebar.php:575 sidebar.php:577 sidebar.php:579 sidebar.php:581
+#: sidebar.php:679 sidebar.php:681 sidebar.php:683 sidebar.php:685
+#: sidebar.php:830 sidebar.php:832 sidebar.php:834 sidebar.php:836
+#: sidebar.php:890 sidebar.php:892 sidebar.php:894 sidebar.php:896
+#: sidebar.php:1001 sidebar.php:1003 sidebar.php:1005 sidebar.php:1007
+#, php-format
+msgid "仅限%s下载"
+msgstr "Only %s download"
+
+#: erphpdown/mobantu.php:366 erphpdown/mobantu.php:368
+#: erphpdown/mobantu.php:370 erphpdown/mobantu.php:372
+#: erphpdown/mobantu.php:374 erphpdown/mobantu.php:376
+#: erphpdown/mobantu.php:411 erphpdown/mobantu.php:415
+#: erphpdown/mobantu.php:419 erphpdown/mobantu.php:423
+#: erphpdown/mobantu.php:427 erphpdown/mobantu.php:431
+#: erphpdown/mobantu.php:435 erphpdown/mobantu.php:439
+#: erphpdown/mobantu.php:491 erphpdown/mobantu.php:493
+#: erphpdown/mobantu.php:495 erphpdown/mobantu.php:497
+#: erphpdown/mobantu.php:639 erphpdown/mobantu.php:641
+#: erphpdown/mobantu.php:643 erphpdown/mobantu.php:645
+#: erphpdown/mobantu.php:647 erphpdown/mobantu.php:649
+#: erphpdown/mobantu.php:684 erphpdown/mobantu.php:688
+#: erphpdown/mobantu.php:692 erphpdown/mobantu.php:696
+#: erphpdown/mobantu.php:700 erphpdown/mobantu.php:704
+#: erphpdown/mobantu.php:708 erphpdown/mobantu.php:712
+#: erphpdown/mobantu.php:716 erphpdown/mobantu.php:720
+#: erphpdown/mobantu.php:724 erphpdown/mobantu.php:728
+#: erphpdown/mobantu.php:778 erphpdown/mobantu.php:780
+#: erphpdown/mobantu.php:782 erphpdown/mobantu.php:784
+#: erphpdown/mobantu.php:786 erphpdown/mobantu.php:788
+#: erphpdown/mobantu.php:1177 erphpdown/mobantu.php:1179
+#: erphpdown/mobantu.php:1181 erphpdown/mobantu.php:1183
+#: erphpdown/mobantu.php:1185 erphpdown/mobantu.php:1187
+#: erphpdown/mobantu.php:1221 erphpdown/mobantu.php:1225
+#: erphpdown/mobantu.php:1229 erphpdown/mobantu.php:1233
+#: erphpdown/mobantu.php:1237 erphpdown/mobantu.php:1241
+#: erphpdown/mobantu.php:1245 erphpdown/mobantu.php:1249
+#: erphpdown/mobantu.php:1253 erphpdown/mobantu.php:1257
+#: erphpdown/mobantu.php:1261 erphpdown/mobantu.php:1265
+#: erphpdown/mobantu.php:1316 erphpdown/mobantu.php:1318
+#: erphpdown/mobantu.php:1320 erphpdown/mobantu.php:1322
+#: erphpdown/mobantu.php:1324 erphpdown/mobantu.php:1326
+#: module/post-box.php:441 module/post-box.php:443 module/post-box.php:445
+#: module/post-box.php:447 module/post-box.php:449 module/post-box.php:451
+#: module/post-box.php:507 module/post-box.php:518 module/post-box.php:529
+#: module/post-box.php:540 module/post-box.php:551 module/post-box.php:562
+#: module/post-box.php:690 module/post-box.php:692 module/post-box.php:694
+#: module/post-box.php:696 module/post-box.php:698 module/post-box.php:700
+#: module/post-box.php:756 module/post-box.php:767 module/post-box.php:778
+#: module/post-box.php:789 module/post-box.php:800 module/post-box.php:811
+#: sidebar.php:523 sidebar.php:525 sidebar.php:527 sidebar.php:529
+#: sidebar.php:531 sidebar.php:533 sidebar.php:584 sidebar.php:588
+#: sidebar.php:592 sidebar.php:596 sidebar.php:600 sidebar.php:604
+#: sidebar.php:608 sidebar.php:612 sidebar.php:687 sidebar.php:689
+#: sidebar.php:691 sidebar.php:693 sidebar.php:838 sidebar.php:840
+#: sidebar.php:842 sidebar.php:844 sidebar.php:846 sidebar.php:848
+#: sidebar.php:899 sidebar.php:903 sidebar.php:907 sidebar.php:911
+#: sidebar.php:915 sidebar.php:919 sidebar.php:923 sidebar.php:927
+#: sidebar.php:931 sidebar.php:935 sidebar.php:939 sidebar.php:943
+#: sidebar.php:1009 sidebar.php:1011 sidebar.php:1013 sidebar.php:1015
+#: sidebar.php:1017 sidebar.php:1019 sidebar.php:1438 sidebar.php:1440
+#: sidebar.php:1442 sidebar.php:1444 sidebar.php:1446 sidebar.php:1448
+#: sidebar.php:1497 sidebar.php:1501 sidebar.php:1505 sidebar.php:1509
+#: sidebar.php:1513 sidebar.php:1517 sidebar.php:1521 sidebar.php:1525
+#: sidebar.php:1529 sidebar.php:1533 sidebar.php:1537 sidebar.php:1541
+#: sidebar.php:1613 sidebar.php:1615 sidebar.php:1617 sidebar.php:1619
+#: sidebar.php:1621 sidebar.php:1623
+#, php-format
+msgid "仅限%s购买"
+msgstr "Only %s buy"
+
+#: erphpdown/mobantu.php:443 erphpdown/mobantu.php:447
+#: erphpdown/mobantu.php:499 sidebar.php:616 sidebar.php:620 sidebar.php:695
+#, php-format
+msgid "仅限%s购买、%s 5折"
+msgstr "Only %s buy、%s half price"
+
+#: erphpdown/mobantu.php:451 erphpdown/mobantu.php:455
+#: erphpdown/mobantu.php:501 sidebar.php:624 sidebar.php:628 sidebar.php:697
+#, php-format
+msgid "仅限%s购买、%s 8折"
+msgstr "Only %s buy、%s 20 percent off"
+
+#: erphpdown/mobantu.php:831 sidebar.php:1135
+#, php-format
+msgid "此资源购买后%s天内可下载。"
+msgstr "This resource is available for download within %s days of purchase."
+
+#: erphpdown/mobantu.php:956 module/post-box.php:289 sidebar.php:1206
+#: sidebar.php:1225 template/tougao.php:360
+msgid "提取码"
+msgstr "Extraction code"
+
+#: erphpdown/mobantu.php:984 inc/post-type.php:15 inc/post-type.php:53
+#: module/user-erphpdown.php:347 module/user-erphpdown.php:878
+msgid "查看"
+msgstr "View"
+
+#: erphpdown/mobantu.php:996 erphpdown/mobantu.php:998
+#: erphpdown/mobantu.php:1002 erphpdown/mobantu.php:1004
+#, php-format
+msgid "%s价格"
+msgstr "Price"
+
+#: erphpdown/mobantu.php:996 erphpdown/mobantu.php:998
+#: erphpdown/mobantu.php:1002 erphpdown/mobantu.php:1004 module/audio.php:110
+#: module/audio.php:112 module/post-box.php:322 module/post-box.php:324
+#: module/user-erphpdown.php:1607 module/user-erphpdown.php:1614
+#: module/video.php:131 module/video.php:133 sidebar.php:1241 sidebar.php:1243
+#: sidebar.php:1247 sidebar.php:1249
+msgid "元"
+msgstr "RMB"
+
+#: erphpdown/mobantu.php:1071 erphpdown/mobantu.php:1074
+#: erphpdown/mobantu.php:1076 erphpdown/mobantu.php:1078
+#: erphpdown/mobantu.php:1080 erphpdown/mobantu.php:1085
+#: erphpdown/mobantu.php:1088 erphpdown/mobantu.php:1090
+#: erphpdown/mobantu.php:1092 erphpdown/mobantu.php:1094
+msgid "查看价格"
+msgstr "Price"
+
+#: erphpdown/mobantu.php:1169 erphpdown/mobantu.php:1171
+#: erphpdown/mobantu.php:1173 erphpdown/mobantu.php:1175
+#: erphpdown/mobantu.php:1212 erphpdown/mobantu.php:1214
+#: erphpdown/mobantu.php:1216 erphpdown/mobantu.php:1218
+#: erphpdown/mobantu.php:1308 erphpdown/mobantu.php:1310
+#: erphpdown/mobantu.php:1312 erphpdown/mobantu.php:1314 sidebar.php:1430
+#: sidebar.php:1432 sidebar.php:1434 sidebar.php:1436 sidebar.php:1488
+#: sidebar.php:1490 sidebar.php:1492 sidebar.php:1494 sidebar.php:1605
+#: sidebar.php:1607 sidebar.php:1609 sidebar.php:1611
+#, php-format
+msgid "仅限%s查看"
+msgstr "Only %s view"
+
+#: erphpdown/mobantu.php:1365 sidebar.php:1732
+#, php-format
+msgid "此内容购买后%s天内可查看。"
+msgstr "This resource is available for view within %s days of purchase."
+
+#: erphpdown/mobantu.php:1429 module/post-box.php:954
+msgid "卡密价格"
+msgstr "Card price"
+
+#: erphpdown/mobantu.php:1430 sidebar.php:1745
+msgid "库存："
+msgstr "Left: "
+
+#: erphpdown/mobantu.php:1491 module/post-box.php:966 sidebar.php:1913
+msgid ""
+"此隐藏内容 <a href=\"javascript:scrollToTop('#respond',-120);\">评论</a> 本文"
+"后<span>刷新页面</span>可见！"
+msgstr ""
+"This content is visible after <a href=\"javascript:scrollTo('#respond',-120);"
+"\">comment</a> and <span>refresh the page</span>!"
+
+#: erphpdown/mobantu.php:1570
+msgid "已复制提取码"
+msgstr "The extraction code has been copied"
+
+#: erphpdown/mobantu.php:1599 module/user-erphpdown.php:252
+#: module/user-erphpdown.php:512 module/user-erphpdown.php:1589
+#: module/user-erphpdown.php:1859 template/vip.php:235
+msgid "分类VIP"
+msgstr "Category VIP"
+
+#: erphpdown/mobantu.php:1601 erphpdown/mobantu.php:1631 header.php:170
+#: header.php:187 module/user-erphpdown.php:254 module/user-erphpdown.php:361
+#: module/user-erphpdown.php:1591 module/user-erphpdown.php:1861
+#: module/vip.php:43 template/vip.php:58
+msgid "普通用户"
+msgstr "Normal"
+
+#: erphpdown/mobantu.php:1635 erphpdown/mobantu.php:1637
+msgid "到期"
+msgstr " Expired"
+
+#: erphpdown/mobantu.php:1638
+msgid "永久尊享"
+msgstr "Lifetime"
+
+#: erphpdown/mobantu.php:1668 erphpdown/mobantu.php:1670
+#: erphpdown/mobantu.php:1674 erphpdown/mobantu.php:1676
+#: erphpdown/mobantu.php:1680 erphpdown/mobantu.php:1682
+#: erphpdown/mobantu.php:1686 erphpdown/mobantu.php:1688
+#: erphpdown/mobantu.php:1692 erphpdown/mobantu.php:1694
+#, php-format
+msgid "今日剩余%s免费下载数：<b>%s</b>"
+msgstr "Today's %s free download left: <b>%s</b>"
+
+#: erphpdown/mobantu.php:1701 erphpdown/mobantu.php:1705
+#: erphpdown/mobantu.php:1709 erphpdown/mobantu.php:1713
+#: erphpdown/mobantu.php:1717
+#, php-format
+msgid "今日剩余%s免费查看数：<b>%s</b>"
+msgstr "Today's %s free view left: <b>%s</b>"
+
+#: footer.php:10
+msgid "友情链接："
+msgstr "Links: "
+
+#: footer.php:13
+msgid "自豪的采用"
+msgstr "Powered by"
+
+#: footer.php:13
+msgid "主题"
+msgstr "theme"
+
+#: footer.php:20
+msgid "在线客服"
+msgstr "Line chat"
+
+#: footer.php:22 inc/shortcodes.php:1647 inc/shortcodes.php:1714
+#: inc/shortcodes.php:1911 inc/shortcodes.php:1977
+msgid "升级"
+msgstr "Upgrade "
+
+#: footer.php:28 footer.php:30 footer.php:33
+msgid "每日签到"
+msgstr "Checkin"
+
+#: footer.php:38
+msgid "全屏浏览"
+msgstr "Full screen"
+
+#: footer.php:53
+msgid "夜间模式"
+msgstr "Night mode"
+
+#: footer.php:54
+msgid "繁简切换"
+msgstr "Traditional"
+
+#: footer.php:55
+msgid "返回顶部"
+msgstr "To top"
+
+#: footer.php:72 inc/base.php:1334
+msgid "首页"
+msgstr "Home"
+
+#: footer.php:73
+msgid "发现"
+msgstr "Find"
+
+#: footer.php:75
+msgid "客服"
+msgstr "Chat"
+
+#: footer.php:78 footer.php:80
+msgid "我的"
+msgstr "My"
+
+#: footer.php:89
+msgid "站点公告"
+msgstr "Site Announcements"
+
+#: footer.php:101
+msgid "关闭"
+msgstr "Close"
+
+#: header.php:26 header.php:97 header.php:240 search.php:45
+msgid "搜索"
+msgstr "Search"
+
+#: header.php:48 inc/base.php:152
+msgid "投稿"
+msgstr "Contribute"
+
+#: header.php:53
+msgid "购物车"
+msgstr "Cart"
+
+#: header.php:58 header.php:73
+msgid "通知"
+msgstr "Notices"
+
+#: header.php:73
+msgid "全部已读"
+msgstr "All read"
+
+#: header.php:103 module/login.php:20 module/login.php:55
+#: template/login.php:192
+msgid "注册"
+msgstr "Register"
+
+#: header.php:106 header.php:113 header.php:186 inc/base.php:149
+msgid "个人中心"
+msgstr "Profile"
+
+#: header.php:122
+msgid "站内余额"
+msgstr "Balance"
+
+#: header.php:122
+msgid "推广余额"
+msgstr "Aff balance"
+
+#: header.php:124
+msgid "余额"
+msgstr "Balance"
+
+#: header.php:179 header.php:191 module/user-erphpdown.php:70
+#: module/user-erphpdown.php:1920 module/user.php:27
+msgid "我的购物"
+msgstr "My shopping"
+
+#: header.php:199 header.php:208
+msgid "后台"
+msgstr "Admin"
+
+#: header.php:201
+msgid "充值"
+msgstr "Recharge"
+
+#: header.php:202
+msgid "购买"
+msgstr "Bought"
+
+#: header.php:204 header.php:210
+msgid "资料"
+msgstr "Info"
+
+#: header.php:213 module/act.php:8 module/act.php:11 sidebar.php:243
+#: sidebar.php:246 sidebar.php:253 sidebar.php:256 sidebar.php:325
+#: sidebar.php:328 sidebar.php:335 sidebar.php:338 sidebar.php:1064
+#: sidebar.php:1067 sidebar.php:1074 sidebar.php:1077 sidebar.php:1262
+#: sidebar.php:1265 sidebar.php:1272 sidebar.php:1275 sidebar.php:1661
+#: sidebar.php:1664 sidebar.php:1671 sidebar.php:1674 sidebar.php:1755
+#: sidebar.php:1758 sidebar.php:1765 sidebar.php:1768 sidebar.php:1845
+#: sidebar.php:1848 sidebar.php:1855 sidebar.php:1858
+msgid "收藏"
+msgstr "Collects"
+
+#: header.php:217 module/login.php:9 module/login.php:34 template/login.php:171
+#: template/login.php:394 template/login.php:460
+msgid "密码"
+msgstr "Password"
+
+#: header.php:218
+msgid "退出"
+msgstr "Logout"
+
+#: header.php:235 header.php:246 inc/base.php:2229 inc/base.php:2238
+#: module/banner.php:13 module/banner.php:23 module/slider.php:188
+#: module/slider.php:198
+msgid "所有分类"
+msgstr "All categories"
+
+#: header.php:239
+msgid "输入关键字回车"
+msgstr "Enter the keyword"
+
+#: inc/auth/qq.php:69 inc/auth/weibo.php:42 inc/auth/weixin.php:30
+msgid "您已登录，请在个人中心绑定。"
+msgstr "You are logged in, please bind it in your personal account."
+
+#: inc/auth/qq.php:84 inc/auth/weibo.php:59 inc/auth/weixin.php:69
+msgid "抱歉，仅支持邀请码注册"
+msgstr "Sorry, only invitation code registration is supported"
+
+#: inc/auth/qq.php:84 inc/auth/weibo.php:59 inc/auth/weixin.php:69
+#: inc/init.php:953
+msgid "友情提示"
+msgstr "Notice"
+
+#: inc/auth/qq.php:127 inc/auth/weibo.php:106 inc/auth/weixin.php:123
+msgid "绑定失败，可能之前已有其他账号绑定，请先登录其他账户解绑。"
+msgstr ""
+"If the binding fails, another account may have been bound before, please log "
+"in to another account to unbind it first."
+
+#: inc/auth/qq.php:140 inc/auth/weibo.php:118 inc/auth/weixin.php:137
+msgid "绑定失败，请先登录。"
+msgstr "Binding failed, please login first."
+
+#: inc/base.php:153
+msgid "提问"
+msgstr "ask"
+
+#: inc/base.php:154 index.php:28 template/homepage3.php:27
+msgid "最新发布"
+msgstr "Newest"
+
+#: inc/base.php:155
+msgid "首页模板一"
+msgstr "Homepage 1"
+
+#: inc/base.php:712 inc/base.php:734
+msgid "上一页"
+msgstr "Previous"
+
+#: inc/base.php:721 inc/base.php:742
+msgid "下一页"
+msgstr "Next"
+
+#: inc/base.php:723
+msgid "跳转"
+msgstr "Jump"
+
+#: inc/base.php:773
+msgid "刚刚"
+msgstr "Just now"
+
+#: inc/base.php:776
+msgid "年前"
+msgstr " years ago"
+
+#: inc/base.php:777
+msgid "月前"
+msgstr " months ago"
+
+#: inc/base.php:778
+msgid "周前"
+msgstr " weeks ago"
+
+#: inc/base.php:779
+msgid "天前"
+msgstr " days ago"
+
+#: inc/base.php:780
+msgid "小时前"
+msgstr " hours ago"
+
+#: inc/base.php:781
+msgid "分钟前"
+msgstr " minutes ago"
+
+#: inc/base.php:782
+msgid "秒前"
+msgstr " seconds ago"
+
+#: inc/base.php:874
+#, php-format
+msgid "第%s页"
+msgstr "Page %s"
+
+#: inc/base.php:1002
+#, php-format
+msgid "%s上关于%s的内容"
+msgstr "%s about %s"
+
+#: inc/base.php:1005
+#, php-format
+msgid "%s上关于%s的搜索結果"
+msgstr "%s search results for %s"
+
+#: inc/base.php:1043
+msgid "已购买"
+msgstr "Bought"
+
+#: inc/base.php:1054
+msgid "回复"
+msgstr "Reply"
+
+#: inc/base.php:1336
+#, php-format
+msgid "搜索结果：%s"
+msgstr "Search results: %s"
+
+#: inc/base.php:1337
+#, php-format
+msgid "标签：%s"
+msgstr "Tag: %s"
+
+#: inc/base.php:1338
+#, php-format
+msgid "作者：%s"
+msgstr "Author: %s"
+
+#: inc/base.php:1342
+msgid "当前位置："
+msgstr "<i class=\"icon icon-home-s\"></i> "
+
+#: inc/base.php:1433 inc/base.php:1435 template/tougao.php:302
+msgid "正文"
+msgstr "Article"
+
+#: inc/base.php:1732 inc/post-type.php:12 inc/post-type.php:50
+#: module/post-header.php:13 module/post-header.php:17
+#: module/user-erphpdown.php:1042 module/user.php:101 single-blog.php:16
+#: single-question.php:24 template/tougao.php:244
+msgid "编辑"
+msgstr "Edit"
+
+#: inc/base.php:1733
+msgid "作者"
+msgstr "Author"
+
+#: inc/base.php:1734
+msgid "投稿者"
+msgstr "Contributor"
+
+#: inc/base.php:1735
+msgid "订阅者"
+msgstr "Subscriber"
+
+#: inc/base.php:1736
+msgid "火星人"
+msgstr "Nobody"
+
+#: inc/base.php:1932
+#, php-format
+msgid "您好，您发表在《%s》上的评论有新回复。"
+msgstr "Hello, there is a new reply to your comment posted on %s."
+
+#: inc/base.php:1936
+#, php-format
+msgid "您好，您发表的文章《%s》有新评论。"
+msgstr "Hello, there is a new reply to your comment posted on %s."
+
+#: inc/base.php:2315
+msgid "投稿奖励"
+msgstr "Contribution reward"
+
+#: inc/base.php:2358 inc/base.php:2373
+msgid "您查询的卡密"
+msgstr "The card you are querying"
+
+#: inc/base.php:2481 inc/base.php:2524
+msgid "社交账号快速登录"
+msgstr "Fast login to social accounts"
+
+#: inc/init.php:343
+msgid "请到后台 外观-菜单 设置此导航"
+msgstr "Please go to the background Appearance-Menu to set this navigation"
+
+#: inc/init.php:827
+msgid "请先登录"
+msgstr "Please login first"
+
+#: inc/init.php:891
+msgid "人机验证"
+msgstr "Human-machine verification"
+
+#: inc/init.php:908
+msgid "验证"
+msgstr "Apply"
+
+#: inc/init.php:909 template/login.php:492
+msgid "返回首页"
+msgstr "Back Home"
+
+#: inc/init.php:937
+msgid "网站维护中"
+msgstr "Website maintenance"
+
+#: inc/init.php:937
+msgid "稍后就会恢复正常，请耐心等待~"
+msgstr "It will be back to normal later, please be patient~"
+
+#: inc/init.php:956
+msgid "请点击右上角的选项图标（...），选择自带默认浏览器打开"
+msgstr ""
+"Please click on the options icon (...) ), select Bring your own default "
+"browser to open"
+
+#: inc/init.php:958
+msgid "当前浏览器不支持访问，请用其他浏览器打开"
+msgstr ""
+"The current browser does not support access, please open it with another "
+"browser"
+
+#: inc/plugin/BFI_Thumb.php:150
+msgid ""
+"服务器未安装和/或启用ImageMagick或GD！WordPress需要这些库中的任何一个来调整图"
+"像大小。请与服务器管理员联系以启用此功能，然后继续。"
+msgstr ""
+"The server does not have ImageMagick or GD installed installed and/or "
+"enabled! WordPress needs any of these libraries to resize images. Contact "
+"your server administrator to enable this feature before continuing."
+
+#: inc/plugin/BFI_Thumb.php:278
+msgid "图像旋转失败。"
+msgstr "Image rotation failed."
+
+#: inc/plugin/BFI_Thumb.php:301
+msgid "图像不透明度更改失败。"
+msgstr "Image opacity change failed."
+
+#: inc/plugin/BFI_Thumb.php:388
+msgid "图像颜色更改失败。"
+msgstr "Image color change failed."
+
+#: inc/plugin/BFI_Thumb.php:405
+msgid "图像灰度失败。"
+msgstr "Image grayscale failed."
+
+#: inc/plugin/BFI_Thumb.php:422
+msgid "图像求反失败。"
+msgstr "Image negation failed."
+
+#: inc/plugin/draw.php:162 inc/ticket.php:320
+msgid "删除"
+msgstr "Delete"
+
+#: inc/plugin/draw.php:234 inc/plugin/draw.php:236
+msgid "一等奖："
+msgstr "First prize:"
+
+#: inc/plugin/draw.php:242 inc/plugin/draw.php:244
+msgid "二等奖："
+msgstr "Second prize: "
+
+#: inc/plugin/draw.php:250 inc/plugin/draw.php:252
+msgid "三等奖："
+msgstr "Third prize: "
+
+#: inc/plugin/draw.php:277
+msgid "一次"
+msgstr "once"
+
+#: inc/plugin/draw.php:283
+msgid "一等奖"
+msgstr "First prize"
+
+#: inc/plugin/draw.php:284
+msgid "二等奖"
+msgstr "Second prize"
+
+#: inc/plugin/draw.php:284
+msgid "三等奖"
+msgstr "Third prize"
+
+#: inc/plugin/draw.php:324
+msgid "抽奖扣除"
+msgstr "Draw deduction"
+
+#: inc/plugin/draw.php:347 inc/plugin/draw.php:359 inc/plugin/draw.php:371
+msgid "抽奖奖励"
+msgstr "Draw reward"
+
+#: inc/plugin/loggedin.php:555
+msgid "欢迎回来，"
+msgstr "Welcome back, "
+
+#: inc/plugin/loggedin.php:556
+msgid "本次登录："
+msgstr "This login: "
+
+#: inc/plugin/loggedin.php:556
+msgid "本次地区："
+msgstr "This region: "
+
+#: inc/plugin/loggedin.php:557
+msgid "上次登录："
+msgstr "Last login: "
+
+#: inc/plugin/loggedin.php:557
+msgid "上次地区："
+msgstr "Last region: "
+
+#: inc/plugin/loggedin.php:558
+msgid "如发现登录异常，请及时修改密码！"
+msgstr "If you find an abnormal login, please change the password in time!"
+
+#: inc/plugin/sitemap.php:120
+msgid ""
+"Your sitemap is being refreshed at the moment. Depending on your Post Count "
+"this might take some time!"
+msgstr ""
+
+#: inc/plugin/sitemap.php:122
+#, php-format
+msgid "Your sitemap will be refreshed in %s seconds!"
+msgstr ""
+
+#: inc/plugin/sitemap.php:126
+msgid ""
+"Donot activate the Auto build the sitema options, you need build the XML "
+"file by yourself."
+msgstr ""
+
+#: inc/plugin/sitemap.php:149
+msgid "Sitemap文件不存在，请先生成XML"
+msgstr "The Sitemap file does not exist, please generate the XML first"
+
+#: inc/plugin/sitemap.php:206
+msgid "启用Sitemap"
+msgstr "Enable Sitemap"
+
+#: inc/plugin/sitemap.php:207
+msgid "XML名称"
+msgstr "XML name"
+
+#: inc/plugin/sitemap.php:211
+msgid "自动更新"
+msgstr "Automatic update"
+
+#: inc/plugin/sitemap.php:212
+msgid "限制1000篇"
+msgstr "Limited to 1,000 articles"
+
+#: inc/plugin/sitemap.php:212
+msgid "XML文件仅包含最新的1000篇文章，以减小服务器压力"
+msgstr ""
+"The XML file contains only the latest 1000 articles to reduce server pressure"
+
+#: inc/plugin/sitemap.php:308
+msgid "设置成功"
+msgstr "Setup success"
+
+#: inc/plugin/sitemap.php:440
+msgid "Congratulate, Build the XML file success"
+msgstr ""
+
+#: inc/plugin/sitemap.php:445
+msgid "Directory is not writable. please chmod your directory to 777."
+msgstr ""
+
+#: inc/plugin/tuan.php:38 inc/plugin/tuan.php:105 inc/plugin/tuan.php:178
+#: inc/plugin/tuan.php:260
+msgid "拼团完成即可下载，未参与的可进入下一轮。"
+msgstr ""
+"You can download it after the groupon is completed, and those who do not "
+"participate can join the next round."
+
+#: inc/plugin/tuan.php:54 inc/plugin/tuan.php:60 inc/plugin/tuan.php:66
+#: inc/plugin/tuan.php:71 inc/plugin/tuan.php:83 inc/plugin/tuan.php:276
+#: inc/plugin/tuan.php:282 inc/plugin/tuan.php:289 inc/plugin/tuan.php:295
+#: inc/plugin/tuan.php:306
+#, php-format
+msgid "此资源拼团价格为<span class=\"erphpdown-price\">%s</span>%s"
+msgstr ""
+"The price for this resource group is<span class=\"erphpdown-price\">%s</span>"
+"%s"
+
+#: inc/plugin/tuan.php:55 inc/plugin/tuan.php:122 inc/plugin/tuan.php:195
+#: inc/plugin/tuan.php:277
+msgid "拼团成功，立即下载"
+msgstr "Download"
+
+#: inc/plugin/tuan.php:59 inc/plugin/tuan.php:126 inc/plugin/tuan.php:200
+#: inc/plugin/tuan.php:281
+msgid "已完成100%"
+msgstr "100% completed"
+
+#: inc/plugin/tuan.php:60 inc/plugin/tuan.php:129 inc/plugin/tuan.php:204
+#: inc/plugin/tuan.php:283
+msgid "拼团已结束"
+msgstr "The group is over"
+
+#: inc/plugin/tuan.php:64 inc/plugin/tuan.php:133 inc/plugin/tuan.php:209
+#: inc/plugin/tuan.php:287
+#, php-format
+msgid "已完成%s"
+msgstr "Completed %s"
+
+#: inc/plugin/tuan.php:64 inc/plugin/tuan.php:133 inc/plugin/tuan.php:209
+#: inc/plugin/tuan.php:287
+#, php-format
+msgid "(共需%s人，还需%s人)"
+msgstr "(%s in total, %s users required)"
+
+#: inc/plugin/tuan.php:71 inc/plugin/tuan.php:144 inc/plugin/tuan.php:223
+#: inc/plugin/tuan.php:295
+msgid "已参团"
+msgstr "Joined"
+
+#: inc/plugin/tuan.php:79 inc/plugin/tuan.php:151 inc/plugin/tuan.php:230
+#: inc/plugin/tuan.php:302
+msgid "我要退团"
+msgstr "I want to withdraw from the group"
+
+#: inc/plugin/tuan.php:83 inc/plugin/tuan.php:157 inc/plugin/tuan.php:238
+#: inc/plugin/tuan.php:306
+msgid "立即参团"
+msgstr "Join the group"
+
+#: inc/plugin/tuan.php:393
+msgid "抱歉，您已单独购买，可直接下载，不用参团"
+msgstr ""
+"Sorry, you have purchased it separately, you can download it directly, you "
+"do not need to join the tour"
+
+#: inc/plugin/tuan.php:399
+msgid "抱歉，拼团已结束，暂时无法参团"
+msgstr "Sorry, the group has ended, we can't join the tour temporarily"
+
+#: inc/plugin/tuan.php:409
+msgid "团购资源"
+msgstr "Group buying resources"
+
+#: inc/plugin/tuan.php:429
+msgid "抱歉，此团已结束，请重新开团"
+msgstr "Sorry, this tour has ended, please reopen the tour"
+
+#: inc/plugin/tuan.php:476
+msgid "退团返回"
+msgstr "Leave the group and return"
+
+#: inc/plugin/tuan.php:481 inc/plugin/tuan.php:490 inc/plugin/tuan.php:494
+#: inc/plugin/tuan.php:498
+msgid "退团失败，请稍后重试！"
+msgstr "Submit failed, please try again later"
+
+#: inc/plugin/tuan.php:485
+msgid "抱歉，此团已完成，无法退团"
+msgstr "Sorry, this tour has been completed and cannot be withdrawn"
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:122
+msgid "All revisions deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:127
+msgid "All drafts deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:132
+msgid "All autodrafts deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:137
+msgid "All moderated comments deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:142
+msgid "All spam comments deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:147
+msgid "All trash comments deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:152
+msgid "All orphan postmeta deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:157
+msgid "All orphan commentmeta deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:162
+msgid "All orphan relationships deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:167
+msgid "All dashboard transient feed deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:181
+msgid "All redundant data deleted!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:186
+msgid "Database Optimized!"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:198
+msgid "Type"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:199
+msgid "Count"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:200
+msgid "Operate"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:206
+msgid "Revision"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:214
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:228
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:242
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:256
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:270
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:284
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:298
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:312
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:326
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:340
+msgid "Delete"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:220
+msgid "Draft"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:234
+msgid "Auto Draft"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:248
+msgid "Moderated Comments"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:262
+msgid "Spam Comments"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:276
+msgid "Trash Comments"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:290
+msgid "Orphan Postmeta"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:304
+msgid "Orphan Commentmeta"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:318
+msgid "Orphan Relationships"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:332
+msgid "Dashboard Transient Feed"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:350
+msgid "Delete All"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:358
+msgid "Table"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:359
+msgid "Size"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:390
+msgid "Total"
+msgstr ""
+
+#: inc/plugin/wp-clean-up/wp_clean_up_admin.php:398
+msgid "Optimize"
+msgstr ""
+
+#: inc/post-type.php:10 inc/post-type.php:48
+#, php-format
+msgid "发布%s"
+msgstr "Add New %s"
+
+#: inc/post-type.php:11 inc/post-type.php:49
+#, php-format
+msgid "发布新%s"
+msgstr "Add New %s"
+
+#: inc/post-type.php:13 inc/post-type.php:51 inc/post-type.php:88
+#: inc/post-type.php:113
+#, php-format
+msgid "编辑%s"
+msgstr "Edit %s"
+
+#: inc/post-type.php:14 inc/post-type.php:52 inc/post-type.php:91
+#: inc/post-type.php:116
+#, php-format
+msgid "新%s"
+msgstr "New %s"
+
+#: inc/post-type.php:16 inc/post-type.php:54
+#, php-format
+msgid "查看%s"
+msgstr "View %s"
+
+#: inc/post-type.php:17 inc/post-type.php:55 inc/post-type.php:84
+#: inc/post-type.php:109
+#, php-format
+msgid "搜索%s"
+msgstr "Search %s"
+
+#: inc/post-type.php:18 inc/post-type.php:56
+#, php-format
+msgid "暂无%s"
+msgstr "No %s found."
+
+#: inc/post-type.php:19 inc/post-type.php:57
+#, php-format
+msgid "回收站中没有%s。"
+msgstr "No %s found in Trash."
+
+#: inc/post-type.php:20 inc/post-type.php:58
+#, php-format
+msgid "父%s"
+msgstr "Parent %s"
+
+#: inc/post-type.php:35 inc/post-type.php:73
+#, php-format
+msgid "%s分类"
+msgstr "%s category"
+
+#: inc/post-type.php:80
+msgid "专题"
+msgstr "Topic"
+
+#: inc/post-type.php:85 inc/post-type.php:110 inc/post-type.php:139
+#: inc/post-type.php:162 inc/post-type.php:185
+#, php-format
+msgid "所有%s"
+msgstr "All %s"
+
+#: inc/post-type.php:86 inc/post-type.php:111
+#, php-format
+msgid "父级%s"
+msgstr "Parent %s"
+
+#: inc/post-type.php:87 inc/post-type.php:112
+#, php-format
+msgid "父级%s:"
+msgstr "Parent %s:"
+
+#: inc/post-type.php:89 inc/post-type.php:114
+#, php-format
+msgid "更新%s"
+msgstr "Update %s"
+
+#: inc/post-type.php:90 inc/post-type.php:115
+#, php-format
+msgid "添加新%s"
+msgstr "Add New %s"
+
+#: inc/post-type.php:92 inc/post-type.php:117
+#, php-format
+msgid "未找到%s。"
+msgstr "No %s found."
+
+#: inc/shortcodes.php:46 inc/shortcodes.php:415 inc/shortcodes.php:692
+#: inc/shortcodes.php:976 inc/shortcodes.php:1060 module/home-blogs.php:28
+msgid "查看更多"
+msgstr "View more"
+
+#: inc/shortcodes.php:127
+msgid "站长推荐"
+msgstr "Recommend"
+
+#: inc/shortcodes.php:127
+msgid "最热浏览"
+msgstr ""
+
+#: inc/shortcodes.php:1244
+msgid ""
+"此内容 <a href=\"javascript:;\" class=\"signin-loader\">登录</a> 后可见！"
+msgstr ""
+"The content is visible after <a href=\"javascript:;\" class=\"signin-loader"
+"\">login</a> !"
+
+#: inc/shortcodes.php:1252
+msgid ""
+"此内容 <a href=\"javascript:scrollTo('#respond',-120);\">评论</a> 本文后"
+"<span>刷新页面</span>可见！"
+msgstr ""
+"This content is visible after <a href=\"javascript:scrollTo('#respond',-120);"
+"\">comment</a> and <span>refresh the page</span>!"
+
+#: inc/shortcodes.php:1630 inc/shortcodes.php:1647 inc/shortcodes.php:1714
+#, fuzzy, php-format
+#| msgid "非VIP用户仅限浏览%s张，共%s张"
+msgid "非%s用户仅限浏览%s张，共%s张"
+msgstr "Non-VIP users are limited to %s photos, total of %s photos"
+
+#: inc/shortcodes.php:1634
+#, php-format
+msgid "游客仅限浏览%s张，共%s张"
+msgstr "Non-logged users are limited to %s photos, total of %s photos"
+
+#: inc/shortcodes.php:1681 inc/shortcodes.php:1687 inc/shortcodes.php:1693
+#: inc/shortcodes.php:1699 inc/shortcodes.php:1705 inc/shortcodes.php:1944
+#: inc/shortcodes.php:1950 inc/shortcodes.php:1956 inc/shortcodes.php:1962
+#: inc/shortcodes.php:1968
+#, php-format
+msgid "您可免费查看此相册，共%s张"
+msgstr "You can view this album for free and %s photos"
+
+#: inc/shortcodes.php:1683 inc/shortcodes.php:1689 inc/shortcodes.php:1695
+#: inc/shortcodes.php:1701 inc/shortcodes.php:1707 inc/shortcodes.php:1946
+#: inc/shortcodes.php:1952 inc/shortcodes.php:1958 inc/shortcodes.php:1964
+#: inc/shortcodes.php:1970
+#, php-format
+msgid "您暂时仅可查看%s张，共%s张"
+msgstr "You can only view %s of %s photos"
+
+#: inc/shortcodes.php:1894 inc/shortcodes.php:1911 inc/shortcodes.php:1977
+#, fuzzy, php-format
+#| msgid "非VIP用户仅可查看%s张，共%s张"
+msgid "非%s用户仅可查看%s张，共%s张"
+msgstr "Non-VIP users are limited to %s photos, total of %s photos"
+
+#: inc/shortcodes.php:1898
+#, php-format
+msgid "游客仅可查看%s张，共%s张"
+msgstr "Non-logged users are limited to %s photos, total of %s photos"
+
+#: inc/ticket.php:81 inc/ticket.php:194
+msgid "售前咨询"
+msgstr "Pre-sale"
+
+#: inc/ticket.php:82 inc/ticket.php:195
+msgid "售后服务"
+msgstr "After-sale"
+
+#: inc/ticket.php:83 inc/ticket.php:93 inc/ticket.php:196
+#: module/user-erphpdown.php:785
+msgid "其他"
+msgstr "Other"
+
+#: inc/ticket.php:89
+msgid "等待回复"
+msgstr "Waiting for reply"
+
+#: inc/ticket.php:90
+msgid "已回复"
+msgstr "Replied"
+
+#: inc/ticket.php:91 module/user-erphpdown.php:202
+#: module/user-erphpdown.php:720 template/task.php:111
+msgid "已完成"
+msgstr "Completed"
+
+#: inc/ticket.php:92
+msgid "已关闭"
+msgstr "Closed"
+
+#: inc/ticket.php:125
+msgid "工单："
+msgstr "Ticket: "
+
+#: inc/ticket.php:156
+msgid "如果您的问题已得到解决，请点击："
+msgstr "If your issue has been resolved, please click: "
+
+#: inc/ticket.php:156
+msgid "已解决"
+msgstr "Resolved"
+
+#: inc/ticket.php:157
+msgid "关闭工单"
+msgstr "Close the ticket"
+
+#: inc/ticket.php:160
+msgid "继续回复："
+msgstr "Continue reply:"
+
+#: inc/ticket.php:161 inc/ticket.php:200
+msgid "请输入内容..."
+msgstr "Please enter content..."
+
+#: inc/ticket.php:161 inc/ticket.php:201
+#, php-format
+msgid "图片可上传到 %s 后在内容里贴上链接"
+msgstr "Images can be uploaded to %s and linked to the content"
+
+#: inc/ticket.php:161 inc/ticket.php:201
+msgid "图床"
+msgstr "Picture bed"
+
+#: inc/ticket.php:177
+msgid "提交回复"
+msgstr "Reply"
+
+#: inc/ticket.php:179 inc/ticket.php:227
+msgid "我们将尽快答复您，请耐心等待！"
+msgstr "We will get back to you as soon as possible, please be patient!"
+
+#: inc/ticket.php:190
+msgid "提交新工单："
+msgstr "Submit a new ticket:"
+
+#: inc/ticket.php:193
+msgid "工单类别："
+msgstr "Ticket category:"
+
+#: inc/ticket.php:199
+msgid "工单内容："
+msgstr "Ticket content:"
+
+#: inc/ticket.php:204
+msgid "联系邮箱："
+msgstr "Contact email:"
+
+#: inc/ticket.php:205
+msgid "请输入邮箱..."
+msgstr "Please enter a email address"
+
+#: inc/ticket.php:209
+msgid "添加图片："
+msgstr "Add image: "
+
+#: inc/ticket.php:225 module/user-erphpdown.php:107
+#: module/user-erphpdown.php:1960 module/user.php:43
+msgid "提交工单"
+msgstr "Submit"
+
+#: inc/ticket.php:258 inc/ticket.php:301
+msgid "工单ID"
+msgstr "Ticket ID"
+
+#: inc/ticket.php:258 inc/ticket.php:302
+msgid "内容"
+msgstr "Content"
+
+#: inc/ticket.php:258 template/task.php:48
+msgid "类别"
+msgstr "Category"
+
+#: inc/ticket.php:258 inc/ticket.php:304 module/user-erphpdown.php:189
+#: module/user-erphpdown.php:600 module/user-erphpdown.php:636
+#: module/user-erphpdown.php:710 module/user-erphpdown.php:748
+#: module/user-erphpdown.php:781 module/user-erphpdown.php:816
+#: module/user-erphpdown.php:857 module/user-erphpdown.php:909
+msgid "时间"
+msgstr "Time"
+
+#: inc/ticket.php:258 inc/ticket.php:305 module/user-erphpdown.php:141
+#: module/user-erphpdown.php:191 module/user-erphpdown.php:711
+#: template/task.php:95 template/task.php:143
+msgid "状态"
+msgstr "Status"
+
+#: inc/ticket.php:277
+msgid "工单"
+msgstr "Ticket"
+
+#: inc/ticket.php:303 module/user-erphpdown.php:907
+#: module/user-erphpdown.php:952 module/user-erphpdown.php:974
+msgid "用户"
+msgstr "User"
+
+#: inc/ticket.php:306 module/user-erphpdown.php:143
+#: module/user-erphpdown.php:858 template/task.php:144
+msgid "操作"
+msgstr "Action"
+
+#: inc/ticket.php:326 module/user-erphpdown.php:162
+#: module/user-erphpdown.php:209 module/user-erphpdown.php:652
+#: module/user-erphpdown.php:727 module/user-erphpdown.php:763
+#: module/user-erphpdown.php:795 module/user-erphpdown.php:835
+#: module/user-erphpdown.php:886 module/user-erphpdown.php:981
+#: module/user-erphpdown.php:1014 module/user-erphpdown.php:1048
+#: module/user-erphpdown.php:1074 module/user-erphpdown.php:1100
+#: module/user-erphpdown.php:1126 module/user-erphpdown.php:1152
+#: module/user-erphpdown.php:1180 module/user.php:73 module/user.php:107
+#: module/user.php:133 module/user.php:159 module/user.php:185
+#: module/user.php:213
+msgid "暂无记录"
+msgstr "No record found"
+
+#: inc/widgets.php:53
+msgid "暂无标签"
+msgstr "No tags"
+
+#: inc/widgets.php:875
+msgid "来源："
+msgstr "From: "
+
+#: module/act.php:6 sidebar.php:241 sidebar.php:323 sidebar.php:1062
+#: sidebar.php:1260 sidebar.php:1659 sidebar.php:1753 sidebar.php:1843
+msgid "已收藏"
+msgstr "Collected"
+
+#: module/act.php:15
+msgid "赏"
+msgstr ""
+
+#: module/audio.php:62
+msgid "此音频播放价格为"
+msgstr "The price for this audio is"
+
+#: module/audio.php:110 module/video.php:131
+msgid "或"
+msgstr "or"
+
+#: module/audio.php:110 module/video.php:131
+#, php-format
+msgid "升级%s后免费"
+msgstr "It's free after upgrading to %s"
+
+#: module/audio.php:460 module/audio.php:468
+msgid "此音频仅限注册用户播放，请先"
+msgstr "This audio is restricted to registered users only, please"
+
+#: module/audio.php:466 module/video.php:421
+msgid "，请先"
+msgstr ", please first"
+
+#: module/banner.php:31
+msgid "热门搜索："
+msgstr "Top search:"
+
+#: module/login.php:8 template/login.php:227 template/login.php:391
+#: template/login.php:457
+msgid "用户名/邮箱"
+msgstr "Username/Email"
+
+#: module/login.php:12 module/login.php:42 template/login.php:181
+#: template/login.php:399 template/login.php:465
+msgid "显示验证码"
+msgstr "Captcha"
+
+#: module/login.php:20
+msgid "没有账号？"
+msgstr "No account?"
+
+#: module/login.php:20 template/login.php:411 template/login.php:477
+msgid "忘记密码？"
+msgstr "Forgot password?"
+
+#: module/login.php:20 module/login.php:61 module/login.php:65
+#: template/login.php:201 template/login.php:208 template/login.php:413
+#: template/login.php:479
+msgid "手机号登录"
+msgstr "Phone Login"
+
+#: module/login.php:24 module/login.php:69 module/login.php:90
+#: template/login.php:216 template/login.php:324 template/login.php:420
+#: template/login.php:487
+msgid "扫码登录"
+msgstr "Scan to login"
+
+#: module/login.php:32 module/user-erphpdown.php:1186 module/user.php:223
+#: template/login.php:165
+msgid "用户名"
+msgstr "Username"
+
+#: module/login.php:37 module/login.php:78 module/user-erphpdown.php:1262
+#: module/user-erphpdown.php:1281 module/user.php:255 module/user.php:274
+#: template/login.php:176 template/login.php:303 template/login.php:433
+msgid "获取验证码"
+msgstr "Captcha"
+
+#: module/login.php:47 template/login.php:185
+msgid "邀请码"
+msgstr "Invitation code"
+
+#: module/login.php:50 template/login.php:187 template/login.php:330
+msgid "购买邀请码"
+msgstr "Buy an invitation code"
+
+#: module/login.php:51 template/login.php:187
+msgid "获取邀请码"
+msgstr "Get an invitation code"
+
+#: module/login.php:58 module/login.php:83 template/login.php:197
+#: template/login.php:312 template/login.php:442
+#, php-format
+msgid "我已阅读并同意《<a href=\"%s\" target=\"_blank\">用户注册协议</a>》"
+msgstr ""
+"I have read and agree to the <a href=\"%s\" target=\"_blank\">User "
+"Registration Agreement</a>"
+
+#: module/login.php:61 module/login.php:65
+msgid "已有账号？"
+msgstr "Already have an account?"
+
+#: module/login.php:77 module/user-erphpdown.php:1276 module/user.php:269
+#: template/login.php:299 template/login.php:429
+msgid "手机号"
+msgstr "Phone"
+
+#: module/login.php:86
+msgid "手机不在身边？"
+msgstr "Not having your phone around?"
+
+#: module/login.php:86 module/login.php:103 template/login.php:317
+#: template/login.php:447
+msgid "账号登录"
+msgstr "Account login"
+
+#: module/login.php:100 template/login.php:249
+msgid "使用其他方式登录/注册"
+msgstr "Login/register using other means"
+
+#: module/post-box.php:86 sidebar.php:27
+msgid "在线演示"
+msgstr "Demo"
+
+#: module/post-box.php:381
+msgid "仅限注册用户下载"
+msgstr "Only for logged user"
+
+#: module/post-box.php:627 module/post-box.php:909
+msgid "免费资源"
+msgstr "Free resources"
+
+#: module/post-header.php:21
+#, fuzzy
+#| msgid "推广余额"
+msgid "推广"
+msgstr "Aff balance"
+
+#: module/share.php:10
+msgid "分享海报"
+msgstr "Share the poster"
+
+#: module/total.php:12
+msgid "总资源数"
+msgstr "Total Posts"
+
+#: module/total.php:17
+msgid "VIP资源数"
+msgstr "VIP Posts"
+
+#: module/total.php:22
+msgid "总用户数"
+msgstr "Total Users"
+
+#: module/total.php:27
+msgid "VIP用户数"
+msgstr "VIP Users"
+
+#: module/user-erphpdown.php:35 module/user.php:8
+msgid "为了确保账号安全，请先绑定邮箱再进行其他操作！"
+msgstr ""
+"In order to ensure the security of your account, please bind your email "
+"address before performing other operations!"
+
+#: module/user-erphpdown.php:37 module/user.php:10
+msgid "为了确保账号安全，请先绑定手机号再进行其他操作！"
+msgstr ""
+"In order to ensure the security of your account, please bind your mobile "
+"phone number before performing other operations!"
+
+#: module/user-erphpdown.php:44 module/user.php:17
+msgid "点击修改头像"
+msgstr "Upload avatar"
+
+#: module/user-erphpdown.php:56 module/user-erphpdown.php:1818
+msgid "已签到"
+msgstr "Checked"
+
+#: module/user-erphpdown.php:56 module/user-erphpdown.php:58
+msgid "签到送"
+msgstr "Checkin to get "
+
+#: module/user-erphpdown.php:58
+msgid "今日签到"
+msgstr "Checkin"
+
+#: module/user-erphpdown.php:71 module/user-erphpdown.php:785
+#: module/user-erphpdown.php:1913
+msgid "在线充值"
+msgstr "Recharge"
+
+#: module/user-erphpdown.php:73 module/user-erphpdown.php:1921
+msgid "充值记录"
+msgstr "Recharges"
+
+#: module/user-erphpdown.php:75 module/user-erphpdown.php:1924
+msgid "积分记录"
+msgstr "Point records"
+
+#: module/user-erphpdown.php:77
+msgid "购买记录"
+msgstr "Purchases"
+
+#: module/user-erphpdown.php:79 module/user-erphpdown.php:1927
+msgid "销售订单"
+msgstr "Sales"
+
+#: module/user-erphpdown.php:82
+msgid "我的拼团"
+msgstr "Groupons"
+
+#: module/user-erphpdown.php:85
+msgid "我的推广"
+msgstr "Affiliates"
+
+#: module/user-erphpdown.php:88 module/user-erphpdown.php:1939
+msgid "站内提现"
+msgstr "Withdraw"
+
+#: module/user-erphpdown.php:90 module/user.php:29
+msgid "我的资料"
+msgstr "Infomation"
+
+#: module/user-erphpdown.php:92 module/user-erphpdown.php:96 module/user.php:31
+#: module/user.php:35
+msgid "我的提问"
+msgstr "Questions"
+
+#: module/user-erphpdown.php:93 module/user.php:32
+msgid "我的回答"
+msgstr "Answers"
+
+#: module/user-erphpdown.php:98 module/user.php:37
+msgid "我的评论"
+msgstr "Comments"
+
+#: module/user-erphpdown.php:100 module/user.php:39
+msgid "我的投稿"
+msgstr "Posts"
+
+#: module/user-erphpdown.php:103
+msgid "我的任务"
+msgstr "Tasks"
+
+#: module/user-erphpdown.php:105 module/user-erphpdown.php:1958
+#: module/user.php:41
+msgid "我的收藏"
+msgstr "Collects"
+
+#: module/user-erphpdown.php:108 module/user.php:44
+msgid "我的工单"
+msgstr "Tickets"
+
+#: module/user-erphpdown.php:111
+msgid "我的广告"
+msgstr "Ads"
+
+#: module/user-erphpdown.php:113 module/user-erphpdown.php:1966
+#: module/user.php:46
+msgid "安全退出"
+msgstr "Logout"
+
+#: module/user-erphpdown.php:137
+msgid "广告位"
+msgstr "Position"
+
+#: module/user-erphpdown.php:139
+msgid "生效时间"
+msgstr "Effective time"
+
+#: module/user-erphpdown.php:140
+msgid "周期"
+msgstr "Cycle"
+
+#: module/user-erphpdown.php:142
+msgid "说明"
+msgstr "Description"
+
+#: module/user-erphpdown.php:153
+msgid "正常"
+msgstr "Normal"
+
+#: module/user-erphpdown.php:153
+msgid "过期"
+msgstr "Expired"
+
+#: module/user-erphpdown.php:155
+msgid "修改广告"
+msgstr "Edit"
+
+#: module/user-erphpdown.php:186 module/user-erphpdown.php:635
+#: module/user-erphpdown.php:854 module/user-erphpdown.php:905
+msgid "名称"
+msgstr "Name"
+
+#: module/user-erphpdown.php:187 module/user-erphpdown.php:855
+#: module/user-erphpdown.php:906
+msgid "订单号"
+msgstr "OrderId"
+
+#: module/user-erphpdown.php:190
+msgid "进度"
+msgstr "Progress"
+
+#: module/user-erphpdown.php:202
+msgid "进行中"
+msgstr "Processing"
+
+#: module/user-erphpdown.php:237 module/user-erphpdown.php:1552
+#: module/user-erphpdown.php:1833
+msgid "可用余额"
+msgstr "Balance"
+
+#: module/user-erphpdown.php:256
+#, php-format
+msgid "%s到期"
+msgstr "%s expiration"
+
+#: module/user-erphpdown.php:258 module/user-erphpdown.php:1595
+msgid "当前权限"
+msgstr "Current permissions"
+
+#: module/user-erphpdown.php:258
+msgid "VIP记录"
+msgstr "VIP Records"
+
+#: module/user-erphpdown.php:318 module/user-erphpdown.php:345
+msgid "无限制"
+msgstr "Unlimited"
+
+#: module/user-erphpdown.php:350 template/tougao.php:337
+msgid "无"
+msgstr "None"
+
+#: module/user-erphpdown.php:353
+#, fuzzy
+#| msgid "今日剩余免费下载数"
+msgid "今日剩余免费下载查看数"
+msgstr "The number of free downloads remaining today"
+
+#: module/user-erphpdown.php:353
+msgid "下载记录"
+msgstr "Downloads"
+
+#: module/user-erphpdown.php:365 module/user-erphpdown.php:375
+#: module/user-erphpdown.php:397 module/user-erphpdown.php:424
+#: module/user-erphpdown.php:455 module/user-erphpdown.php:490
+#: module/user-erphpdown.php:546 module/user-erphpdown.php:548
+#: module/user-erphpdown.php:574 module/vip.php:47 module/vip.php:58
+#: module/vip.php:60 module/vip.php:84 module/vip.php:86 module/vip.php:115
+#: module/vip.php:117 module/vip.php:150 module/vip.php:152 module/vip.php:189
+#: module/vip.php:191 template/vip.php:62 template/vip.php:73
+#: template/vip.php:75 template/vip.php:100 template/vip.php:102
+#: template/vip.php:132 template/vip.php:134 template/vip.php:168
+#: template/vip.php:170 template/vip.php:208 template/vip.php:210
+#: template/vip.php:270 template/vip.php:272
+msgid "立即升级"
+msgstr "Upgrade"
+
+#: module/user-erphpdown.php:373 module/user-erphpdown.php:395
+#: module/vip.php:55 module/vip.php:81 template/vip.php:70 template/vip.php:97
+#, php-format
+msgid "%s天"
+msgstr "%s days"
+
+#: module/user-erphpdown.php:398 module/user-erphpdown.php:425
+#: module/user-erphpdown.php:456 module/user-erphpdown.php:491
+#: module/vip.php:88 module/vip.php:119 module/vip.php:154 module/vip.php:193
+#: template/vip.php:104 template/vip.php:136 template/vip.php:172
+#: template/vip.php:212
+msgid "补差价"
+msgstr "Make up difference"
+
+#: module/user-erphpdown.php:422 module/user-erphpdown.php:453
+#: module/vip.php:112 module/vip.php:147 template/vip.php:129
+#: template/vip.php:165
+#, php-format
+msgid "%s个月"
+msgstr "%s months"
+
+#: module/user-erphpdown.php:488 module/vip.php:186 template/vip.php:205
+#, php-format
+msgid "%s年"
+msgstr "%s years"
+
+#: module/user-erphpdown.php:488 module/vip.php:186 template/vip.php:205
+msgid "永久"
+msgstr "Lifetime"
+
+#: module/user-erphpdown.php:570
+msgid "激活码"
+msgstr "Activation code"
+
+#: module/user-erphpdown.php:598
+msgid "VIP类型"
+msgstr "VIP type"
+
+#: module/user-erphpdown.php:667 module/user-erphpdown.php:1219
+#: module/user-erphpdown.php:1239
+msgid "姓名"
+msgstr "Name"
+
+#: module/user-erphpdown.php:670
+msgid "提现比例"
+msgstr "Proportion"
+
+#: module/user-erphpdown.php:673
+msgid "手续费"
+msgstr "Fee"
+
+#: module/user-erphpdown.php:682
+#, php-format
+msgid "提现%s"
+msgstr "%s"
+
+#: module/user-erphpdown.php:683
+msgid "可提现余额："
+msgstr "Withdrawable balance:"
+
+#: module/user-erphpdown.php:686
+msgid "立即提现"
+msgstr "Apply"
+
+#: module/user-erphpdown.php:686
+msgid "提现记录"
+msgstr "Withdraw History"
+
+#: module/user-erphpdown.php:709
+msgid "实际到账(元)"
+msgstr "Actual arrival(RMB)"
+
+#: module/user-erphpdown.php:720
+msgid "处理中"
+msgstr "Processing"
+
+#: module/user-erphpdown.php:747
+msgid "来源"
+msgstr "From"
+
+#: module/user-erphpdown.php:781 module/user-erphpdown.php:856
+#: module/user-erphpdown.php:908 module/user-erphpdown.php:1892
+#: module/user-erphpdown.php:1906
+msgid "金额"
+msgstr "Price"
+
+#: module/user-erphpdown.php:781
+msgid "方式"
+msgstr "Method"
+
+#: module/user-erphpdown.php:785
+msgid "后台充值"
+msgstr "Backend"
+
+#: module/user-erphpdown.php:785
+msgid "Mycred兑换"
+msgstr "Mycred exchange"
+
+#: module/user-erphpdown.php:785
+msgid "充值卡"
+msgstr "Recharge card"
+
+#: module/user-erphpdown.php:791
+msgid "充值问题："
+msgstr "Issues:"
+
+#: module/user-erphpdown.php:792
+msgid ""
+"付款后系统会与支付服务方进行交互读取数据，可能会导致到账延迟，一般不会超过2分"
+"钟。"
+msgstr ""
+"After payment, the system will interact with the payment service provider to "
+"read the data, which may cause a delay in arrival, generally no more than 2 "
+"minutes."
+
+#: module/user-erphpdown.php:815
+msgid "行为"
+msgstr "Behavior"
+
+#: module/user-erphpdown.php:817
+msgid "积分"
+msgstr "Credit"
+
+#: module/user-erphpdown.php:818
+msgid "条目"
+msgstr "Entry"
+
+#: module/user-erphpdown.php:871
+msgid "附加信息："
+msgstr "Additional: "
+
+#: module/user-erphpdown.php:932
+msgid "您的专属推广链接："
+msgstr "Your unique Aff link: "
+
+#: module/user-erphpdown.php:932
+msgid "复制链接"
+msgstr "Copy Link"
+
+#: module/user-erphpdown.php:932
+msgid "推广图片"
+msgstr "Aff image"
+
+#: module/user-erphpdown.php:933
+msgid "已推广注册"
+msgstr "Promoted registration "
+
+#: module/user-erphpdown.php:933
+msgid "人"
+msgstr "users"
+
+#: module/user-erphpdown.php:953 module/user-erphpdown.php:975
+#: module/user-erphpdown.php:1189 module/user.php:226
+msgid "注册时间"
+msgstr "Register"
+
+#: module/user-erphpdown.php:954 module/user-erphpdown.php:976
+msgid "消费金额"
+msgstr "Price"
+
+#: module/user-erphpdown.php:955 module/user-erphpdown.php:977
+#: module/user-erphpdown.php:1876
+msgid "奖励"
+msgstr "Reward"
+
+#: module/user-erphpdown.php:986
+msgid "推广说明："
+msgstr "Aff tips:"
+
+#: module/user-erphpdown.php:988
+msgid "请勿作弊，否则封相关账户不通知"
+msgstr "Do not cheat, otherwise the relevant account will not be notified"
+
+#: module/user-erphpdown.php:989
+msgid "推广链接可以是任意页面后加"
+msgstr "The affiliate link can be any page appended to it"
+
+#: module/user-erphpdown.php:990
+msgid "推广统计可能与实际存在差异，具体以实际数据为准。"
+msgstr ""
+"Promotion statistics may differ from actual data, and the actual data shall "
+"prevail."
+
+#: module/user-erphpdown.php:1009 module/user.php:68
+msgid "文章："
+msgstr "From: "
+
+#: module/user-erphpdown.php:1033 module/user.php:92
+msgid "状态："
+msgstr "Status: "
+
+#: module/user-erphpdown.php:1033 module/user.php:92
+msgid "已发布"
+msgstr "Published"
+
+#: module/user-erphpdown.php:1033 module/user.php:92
+msgid "审核中"
+msgstr "Pending"
+
+#: module/user-erphpdown.php:1033 module/user.php:92 template/tougao.php:244
+msgid "草稿"
+msgstr "Draft"
+
+#: module/user-erphpdown.php:1041 module/user.php:100
+msgid "投稿于："
+msgstr "Contributed in:"
+
+#: module/user-erphpdown.php:1146 module/user.php:179
+msgid "问题："
+msgstr "Question: "
+
+#: module/user-erphpdown.php:1173 module/user.php:206
+msgid "收藏于："
+msgstr "Collected in: "
+
+#: module/user-erphpdown.php:1174 module/user.php:207 sidebar.php:251
+#: sidebar.php:333 sidebar.php:1072 sidebar.php:1270 sidebar.php:1669
+#: sidebar.php:1763 sidebar.php:1853
+msgid "取消收藏"
+msgstr "Uncollect"
+
+#: module/user-erphpdown.php:1201 module/user.php:238
+msgid "个人简介"
+msgstr "Description"
+
+#: module/user-erphpdown.php:1205 module/user.php:242
+msgid "修改资料"
+msgstr "Update"
+
+#: module/user-erphpdown.php:1223 module/user-erphpdown.php:1243
+msgid "身份证"
+msgstr "ID Card"
+
+#: module/user-erphpdown.php:1227
+msgid "已实名"
+msgstr "user verified"
+
+#: module/user-erphpdown.php:1247
+msgid "实名认证"
+msgstr "Name verification"
+
+#: module/user-erphpdown.php:1247
+msgid "仅有一次认证机会，请认真仔细填写"
+msgstr ""
+"There is only one chance to be certified, so please fill it out carefully"
+
+#: module/user-erphpdown.php:1265 module/user.php:258
+msgid "修改邮箱"
+msgstr "Update"
+
+#: module/user-erphpdown.php:1265 module/user.php:258
+msgid "绑定邮箱"
+msgstr "Update"
+
+#: module/user-erphpdown.php:1284 module/user.php:277
+msgid "修改手机号"
+msgstr "Update"
+
+#: module/user-erphpdown.php:1293 module/user.php:286 template/login.php:275
+msgid "新密码"
+msgstr "New password"
+
+#: module/user-erphpdown.php:1297 module/user.php:290 template/login.php:278
+msgid "重复新密码"
+msgstr "Repeat new password"
+
+#: module/user-erphpdown.php:1301 module/user.php:294 template/login.php:282
+msgid "修改密码"
+msgstr "Update"
+
+#: module/user-erphpdown.php:1312 module/user.php:305
+msgid "社交账号绑定"
+msgstr "Social accounts"
+
+#: module/user-erphpdown.php:1319 module/user-erphpdown.php:1337
+#: module/user-erphpdown.php:1358 module/user.php:312 module/user.php:330
+#: module/user.php:351
+msgid "微信"
+msgstr "WeChat"
+
+#: module/user-erphpdown.php:1321 module/user-erphpdown.php:1339
+#: module/user-erphpdown.php:1360 module/user-erphpdown.php:1377
+#: module/user-erphpdown.php:1394 module/user-erphpdown.php:1411
+#: module/user-erphpdown.php:1428 module/user.php:314 module/user.php:332
+#: module/user.php:353 module/user.php:370 module/user.php:387
+#: module/user.php:404 module/user.php:421
+msgid "已绑定"
+msgstr "Binded"
+
+#: module/user-erphpdown.php:1322 module/user-erphpdown.php:1340
+#: module/user-erphpdown.php:1361 module/user-erphpdown.php:1378
+#: module/user-erphpdown.php:1395 module/user-erphpdown.php:1412
+#: module/user-erphpdown.php:1429 module/user.php:315 module/user.php:333
+#: module/user.php:354 module/user.php:371 module/user.php:388
+#: module/user.php:405 module/user.php:422
+msgid "取消绑定"
+msgstr "Unbind"
+
+#: module/user-erphpdown.php:1324 module/user-erphpdown.php:1343
+#: module/user-erphpdown.php:1345 module/user-erphpdown.php:1363
+#: module/user-erphpdown.php:1380 module/user-erphpdown.php:1397
+#: module/user-erphpdown.php:1414 module/user-erphpdown.php:1431
+#: module/user.php:317 module/user.php:336 module/user.php:338
+#: module/user.php:356 module/user.php:373 module/user.php:390
+#: module/user.php:407 module/user.php:424
+msgid "立即绑定"
+msgstr "Bind"
+
+#: module/user-erphpdown.php:1375 module/user-erphpdown.php:1409
+#: module/user.php:368 module/user.php:402
+msgid "微博"
+msgstr "Weibo"
+
+#: module/user-erphpdown.php:1552 module/user-erphpdown.php:1922
+msgid "余额明细"
+msgstr "Balance logs"
+
+#: module/user-erphpdown.php:1557 module/user-erphpdown.php:1839
+msgid "推广余额："
+msgstr "Aff Balance: "
+
+#: module/user-erphpdown.php:1565
+msgid "推广奖励"
+msgstr "Aff rewards"
+
+#: module/user-erphpdown.php:1565
+msgid "推广详情"
+msgstr "View details"
+
+#: module/user-erphpdown.php:1566
+msgid "统计可能存在偏差"
+msgstr "Statistics may be biased"
+
+#: module/user-erphpdown.php:1573 module/user-erphpdown.php:1884
+msgid "累计充值"
+msgstr "Recharges"
+
+#: module/user-erphpdown.php:1593 module/user-erphpdown.php:1863
+msgid "到期时间："
+msgstr "Expiration Date: "
+
+#: module/user-erphpdown.php:1612 module/user-erphpdown.php:1614
+#: module/user-erphpdown.php:1789
+msgid "立即充值"
+msgstr "Recharge"
+
+#: module/user-erphpdown.php:1772
+#, php-format
+msgid ""
+"<div class=\"item\">充值 <span>%s</span> 元，实际到账 <span>%s</span> %s</"
+"div>"
+msgstr ""
+"<div class=\"item\">Recharge <span>%s</span>, get <span>%s</span> %s</div>"
+
+#: module/user-erphpdown.php:1783
+msgid "充值卡充值"
+msgstr "Recharge card"
+
+#: module/user-erphpdown.php:1785
+msgid "卡号"
+msgstr "Card number"
+
+#: module/user-erphpdown.php:1796
+#, php-format
+msgid "%s兑换"
+msgstr "%s exchange"
+
+#: module/user-erphpdown.php:1798
+#, php-format
+msgid "请输入%s数"
+msgstr "Please enter the number of %s"
+
+#: module/user-erphpdown.php:1801
+msgid "立即兑换"
+msgstr "Exchange"
+
+#: module/user-erphpdown.php:1802
+msgid "，可用"
+msgstr ", available "
+
+#: module/user-erphpdown.php:1820
+msgid "签到"
+msgstr "Checkin"
+
+#: module/user-erphpdown.php:1841
+msgid "余额可用于消费或提现"
+msgstr "The balance can be used for spending or withdrawals"
+
+#: module/user-erphpdown.php:1846
+msgid "VIP权限"
+msgstr "VIP access"
+
+#: module/user-erphpdown.php:1863
+msgid "升级VIP享受更多特权"
+msgstr "Upgrade your VIP to enjoy more privileges"
+
+#: module/user-erphpdown.php:1868
+msgid "累计推广"
+msgstr "Cumulative promotion"
+
+#: module/user-erphpdown.php:1872
+msgid "人数"
+msgstr "Number"
+
+#: module/user-erphpdown.php:1888
+msgid "笔"
+msgstr "orders"
+
+#: module/user-erphpdown.php:1898
+msgid "累计购买"
+msgstr "Cumulative purchases"
+
+#: module/user-erphpdown.php:1902
+msgid "资源"
+msgstr "Resource"
+
+#: module/user-erphpdown.php:1930
+msgid "拼团订单"
+msgstr "Group orders"
+
+#: module/user-erphpdown.php:1933
+msgid "悬赏任务"
+msgstr "Tasks"
+
+#: module/user-erphpdown.php:1936
+msgid "广告订单"
+msgstr "AD orders"
+
+#: module/user-erphpdown.php:1946
+msgid "个人信息"
+msgstr "Personal Info"
+
+#: module/user-erphpdown.php:1948 module/user-erphpdown.php:1952
+msgid "提问记录"
+msgstr "Ask Record"
+
+#: module/user-erphpdown.php:1949
+msgid "回答记录"
+msgstr "Answer Record"
+
+#: module/user-erphpdown.php:1954
+msgid "文章评论"
+msgstr "Article Review"
+
+#: module/user-erphpdown.php:1956
+msgid "文章投稿"
+msgstr "Post Submit"
+
+#: module/user-erphpdown.php:1961
+msgid "工单记录"
+msgstr "Tickets"
+
+#: module/video.php:69
+msgid "此视频观看价格为"
+msgstr "The video price is"
+
+#: module/video.php:88 module/video.php:457
+#, php-format
+msgid "共 %s 节"
+msgstr "%s sections"
+
+#: module/video.php:98
+msgid "全套视频观看价格合计为"
+msgstr "The video price is"
+
+#: module/video.php:415 module/video.php:423
+msgid "此视频仅限注册用户观看，请先"
+msgstr "This video is only available to registered users, please"
+
+#: search.php:58 search.php:73
+msgid "所有类型"
+msgstr "All types"
+
+#: search.php:61
+msgid "文章类型"
+msgstr "The type of article"
+
+#: sidebar.php:107
+msgid "免费下载"
+msgstr "Free Download"
+
+#: sidebar.php:553 sidebar.php:556 sidebar.php:559 sidebar.php:562
+#: sidebar.php:659 sidebar.php:662 sidebar.php:665 sidebar.php:668
+#: sidebar.php:868 sidebar.php:871 sidebar.php:874 sidebar.php:877
+#: sidebar.php:981 sidebar.php:984 sidebar.php:987 sidebar.php:990
+#: sidebar.php:1466 sidebar.php:1469 sidebar.php:1472 sidebar.php:1475
+#: sidebar.php:1585 sidebar.php:1588 sidebar.php:1591 sidebar.php:1594
+#, php-format
+msgid "%s %s折"
+msgstr "%s %s fold"
+
+#: sidebar.php:721
+msgid "下载价"
+msgstr "Price"
+
+#: single-blog.php:39 single.php:120
+msgid "本文链接："
+msgstr "Permalink: "
+
+#: single-blog.php:39 single.php:120
+msgid "，转载请注明出处。"
+msgstr ", Please indicate the source of reprinting."
+
+#: single-blog.php:59 single.php:131
+msgid "上一篇"
+msgstr "Previous"
+
+#: single-blog.php:60 single.php:132
+msgid "下一篇"
+msgstr "Next"
+
+#: single.php:48
+msgid "详细介绍"
+msgstr "Detail"
+
+#: single.php:105 template/vip.php:322
+msgid "常见问题"
+msgstr "FAQ"
+
+#: template/archives.php:56
+msgid "1评论"
+msgstr "1 Comment"
+
+#: template/archives.php:56
+msgid "%评论"
+msgstr "% Comments"
+
+#: template/ask.php:35 template/task.php:139 template/tougao.php:249
+msgid "标题"
+msgstr "Title"
+
+#: template/ask.php:39 template/tougao.php:253
+msgid "分类"
+msgstr "Category"
+
+#: template/ask.php:60
+msgid "问题描述"
+msgstr "Question description "
+
+#: template/ask.php:74
+msgid "提问说明"
+msgstr "Question explanation"
+
+#: template/links.php:31
+msgid "快速导航"
+msgstr "Navigation"
+
+#: template/links.php:57 template/links.php:90
+msgid "这个网站没有任何描述信息"
+msgstr "This website does not have any descriptive information"
+
+#: template/links.php:109
+msgid "友情链接"
+msgstr "Friend links"
+
+#: template/login.php:202 template/login.php:209 template/login.php:237
+msgid "返回登录"
+msgstr "Return login"
+
+#: template/login.php:231
+msgid "找回密码"
+msgstr "Find password"
+
+#: template/login.php:255
+msgid "账号"
+msgstr "Account"
+
+#: template/login.php:291
+msgid "错误的请求，请查看邮箱里的重置密码链接。"
+msgstr ""
+"For incorrect requests, please check the reset password link in your email."
+
+#: template/login.php:316 template/login.php:412 template/login.php:446
+#: template/login.php:478
+msgid "注册账号"
+msgstr "Register"
+
+#: template/login.php:376
+msgid "立即支付"
+msgstr "Pay"
+
+#: template/login.php:382
+msgid "返回注册"
+msgstr "Register"
+
+#: template/page-faka.php:23
+msgid "请输入FK开头的订单号或邮箱"
+msgstr "Please enter the order number or email address starting with FK"
+
+#: template/page-faka.php:24
+msgid "查询"
+msgstr "Query"
+
+#: template/task.php:29
+msgid "类型"
+msgstr "Type"
+
+#: template/task.php:41
+msgid "单人任务"
+msgstr "Single player"
+
+#: template/task.php:42
+msgid "多人任务"
+msgstr "Multi player"
+
+#: template/task.php:77
+msgid "子类"
+msgstr "Child"
+
+#: template/task.php:109
+msgid "投标中"
+msgstr "Bidding"
+
+#: template/task.php:110
+msgid "已选标"
+msgstr "Selected bid"
+
+#: template/task.php:116
+msgid "资金"
+msgstr "Price"
+
+#: template/task.php:128
+msgid "已托管"
+msgstr "Hosted"
+
+#: template/task.php:129
+msgid "未托管"
+msgstr "unhosted"
+
+#: template/task.php:135
+msgid "任务列表"
+msgstr "Task list"
+
+#: template/task.php:136
+msgid "发布任务"
+msgstr "New task"
+
+#: template/task.php:140
+msgid "发布时间"
+msgstr "Date"
+
+#: template/task.php:141
+msgid "参与人数"
+msgstr "People"
+
+#: template/task.php:142
+msgid "预算金额"
+msgstr "Budget"
+
+#: template/tougao.php:105
+msgid "编辑成功，请等待管理员审核！"
+msgstr "Edit successful, please wait for the administrator to review!"
+
+#: template/tougao.php:108 template/tougao.php:183
+msgid "投稿失败，请稍后重试！"
+msgstr "Submit failed, please try again later"
+
+#: template/tougao.php:111 template/tougao.php:186
+msgid "投稿失败，请完善标题、分类、正文！"
+msgstr "Submission fails, please improve the title, category, and content!"
+
+#: template/tougao.php:180
+msgid "投稿成功，请等待管理员审核！"
+msgstr "Submit successful, please wait for the administrator to review!"
+
+#: template/tougao.php:258 template/tougao.php:262
+msgid "选择分类"
+msgstr "Select a category"
+
+#: template/tougao.php:282
+msgid "封面图"
+msgstr "Cover image"
+
+#: template/tougao.php:284 template/tougao.php:288
+msgid "上传图片"
+msgstr "Upload Image"
+
+#: template/tougao.php:292
+msgid "请输入外链图片地址"
+msgstr "Please enter the backlink image address"
+
+#: template/tougao.php:298
+msgid "视频地址"
+msgstr "Video URL"
+
+#: template/tougao.php:319
+msgid "收费选项"
+msgstr "Charging options"
+
+#: template/tougao.php:321
+msgid "不启用"
+msgstr "None"
+
+#: template/tougao.php:322
+msgid "收费下载"
+msgstr "Charge download"
+
+#: template/tougao.php:323
+msgid "收费查看全文"
+msgstr "Charges view"
+
+#: template/tougao.php:324
+msgid "收费查看部分"
+msgstr "Charges view section"
+
+#: template/tougao.php:324
+msgid "内容里用[erphpdown]隐藏内容[/erphpdown]"
+msgstr "Hide content with [erphpdown] in the content[/erphpdown]"
+
+#: template/tougao.php:326
+msgid "售卖总额的"
+msgstr "Total sold amount"
+
+#: template/tougao.php:332
+msgid "将直接进入您的网站账户"
+msgstr "will go directly to your website account"
+
+#: template/tougao.php:347
+msgid "留空或0则表示免费"
+msgstr "Leave blank or 0 for free"
+
+#: template/tougao.php:352
+msgid "上传附件"
+msgstr "Upload attachments"
+
+#: template/tougao.php:352
+msgid "支持.zip .rar .7z"
+msgstr "Attachment format are only supported for .zip .rar .7z"
+
+#: template/tougao.php:354
+msgid "请输入附件下载地址，一行一个"
+msgstr "Please enter the attachment download address, one per line"
+
+#: template/tougao.php:362
+msgid "提取码或者解压密码"
+msgstr "Extraction code or unzip password"
+
+#: template/tougao.php:366
+msgid "保存草稿"
+msgstr "Save draft"
+
+#: template/tougao.php:384
+msgid "投稿说明"
+msgstr "Contribute Tips"
+
+#: template/vip.php:77 template/vip.php:105 template/vip.php:137
+#: template/vip.php:173 template/vip.php:213
+msgid "<em>75%</em>的人选择该套餐"
+msgstr "<em>75%</em> chosen"
+
+#: template/vip.php:236
+msgid "术业有专攻，多种VIP任你选"
+msgstr "There are specialties in the art industry, Many VIPs to choose"
+
+#: template/vip.php:299
+msgid "游客"
+msgstr "Visitor"
+
+#: template/vip.php:301
+msgid " 刚刚升级了 "
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Modown"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "WordPress资源下载主题"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "模板兔"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.mobantu.com"
+msgstr ""
+
+#~ msgid "工单列表"
+#~ msgstr "Ticket list"
+
+#~ msgid "统计存在差异，具体以实际到账为准"
+#~ msgstr "There are discrepancies in statistics"
+
+#~ msgid "博客分类"
+#~ msgstr "Categories"
+
+#~ msgid "包季VIP免费"
+#~ msgstr "Seasonal VIP free"
+
+#~ msgid "包年VIP免费"
+#~ msgstr "Annual VIP free"
+
+#~ msgid "终身VIP免费"
+#~ msgstr "Permanent VIP free"
+
+#~ msgid "成功"
+#~ msgstr "Success"
+
+#~ msgid "搜素一下"
+#~ msgstr "Search"
