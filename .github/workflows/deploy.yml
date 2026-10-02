@@ -104,6 +104,13 @@ jobs:
               echo "✅ 插件已注入（含 Lyanna/erphpdown）"; fi
           else echo "⏭ bolent_wp 未运行，跳过"; fi'
 
+      - name: Activate modown theme + erphpdown plugin (幂等，书店上线收尾)
+        run: |
+          ssh deploy 'if docker ps --format "{{.Names}}" | grep -q "^bolent_wp$"; then
+            docker exec bolent_wp php /var/www/html/wp-content/scripts/activate-bookstore.php \
+              && echo "✅ 书店激活步骤完成" || echo "⏭ 激活脚本报错";
+          else echo "⏭ bolent_wp 未运行，跳过"; fi'
+
       - name: Retire stale nginx confs (归档旧手写 conf，幂等)
         run: ssh deploy 'bash /opt/szbolent-cn/scripts/retire-stale-confs.sh'
 
