@@ -21,6 +21,42 @@
 
 if (!defined('ABSPATH')) exit;
 
+// ---------- 0) CORS：仅放行橱窗两个来源，严禁反射 / 带凭据 ----------
+// 书店 feed 被橱窗跨域读取，但核心 rest_send_cors_headers 会无差别回显任意 Origin 并带
+// Access-Control-Allow-Credentials: true（任意来源反射 + 凭据，危险）。这里在更高优先级
+// 摘掉核心头，仅对白名单来源下发 ACAO，并置 Credentials 为 false。非白名单来源不回 ACAO，
+// 浏览器自行拦截跨域读取。原文页是普通链接跳转，不走 CORS，不受影响。
+add_filter( 'rest_pre_serve_request', function ( $served, $result, $request, $server ) {
+    $route = ltrim( (string) $request->get_route(), '/' );
+    if ( 0 !== strpos( $route, 'bookstore/v1' ) ) {
+        return $served;
+    }
+    if ( headers_sent() ) {
+        return $served;
+    }
+
+    // 摘掉 WordPress 核心对所有 REST 响应无差别回显的 CORS 头。
+    header_remove( 'Access-Control-Allow-Origin' );
+    header_remove( 'Access-Control-Allow-Credentials' );
+
+    $allowed = array(
+        'https://www.szbolent.com.cn',
+        'https://szbolent.com.cn',
+    );
+    $origin = isset( $_SERVER['HTTP_ORIGIN'] ) ? (string) $_SERVER['HTTP_ORIGIN'] : '';
+    $origin = untrailingslashit( esc_url_raw( wp_unslash( $origin ) ) );
+
+    if ( in_array( $origin, $allowed, true ) ) {
+        header( 'Access-Control-Allow-Origin: ' . $origin, true );
+        header( 'Access-Control-Allow-Credentials: false', true );
+        header( 'Access-Control-Allow-Methods: GET, OPTIONS', true );
+        header( 'Access-Control-Allow-Headers: Content-Type, Accept', true );
+    }
+    header( 'Cache-Control: no-cache', true );
+
+    return $served;
+}, 20, 4 );
+
 // ---------- 1) 自定义文章类型 poem ----------
 add_action('init', function () {
     register_post_type('poem', [
