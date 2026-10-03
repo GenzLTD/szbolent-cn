@@ -36,8 +36,11 @@ add_filter( 'rest_pre_serve_request', function ( $served, $result, $request, $se
     }
 
     // 摘掉 WordPress 核心对所有 REST 响应无差别回显的 CORS 头。
+    // 核心还会下发 Vary: Origin，这里一并摘掉，改由 nginx /wp-json 段统一下发
+    // Vary: Accept-Encoding, Origin，避免重复 Vary 头。
     header_remove( 'Access-Control-Allow-Origin' );
     header_remove( 'Access-Control-Allow-Credentials' );
+    header_remove( 'Vary' );
 
     $allowed = array(
         'https://www.szbolent.com.cn',
