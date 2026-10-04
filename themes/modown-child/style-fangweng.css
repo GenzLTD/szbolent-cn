@@ -1,0 +1,83 @@
+/* 放翁文库 国风视觉 — 仅作用于子主题自定义模板（.fw-*），不影响 modown 登录/VIP 等原模块 */
+:root{
+  --fw-paper:#f7f1e3;
+  --fw-paper-2:#fbf7ec;
+  --fw-ink:#2b2622;
+  --fw-ink-soft:#6b6157;
+  --fw-seal:#9e2b25;
+  --fw-gold:#b08d57;
+  --fw-jade:#5f7a6e;
+  --fw-line:#d8cdb5;
+  --fw-serif:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong",serif;
+}
+body.fw-themed{background:var(--fw-paper);color:var(--fw-ink);font-family:var(--fw-serif);}
+.fw-wrap{max-width:1080px;margin:0 auto;padding:24px 20px 56px;}
+.fw-section-title{font-size:18px;font-weight:600;color:var(--fw-ink);margin:32px 0 14px;padding-left:12px;border-left:4px solid var(--fw-seal);}
+
+/* 每日一诗 Hero */
+.fw-hero{display:flex;gap:24px;align-items:center;background:linear-gradient(180deg,var(--fw-paper-2),var(--fw-paper));border:1px solid var(--fw-line);border-radius:14px;padding:28px 32px;position:relative;overflow:hidden;}
+.fw-hero::after{content:"游";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:120px;color:rgba(158,43,37,.06);font-family:var(--fw-serif);}
+.fw-hero .fw-hero-body{flex:1;position:relative;z-index:1;}
+.fw-hero .fw-kicker{display:inline-block;color:var(--fw-seal);font-size:13px;letter-spacing:2px;border:1px solid var(--fw-seal);border-radius:999px;padding:2px 12px;}
+.fw-hero h1{font-size:26px;margin:12px 0 2px;font-weight:600;}
+.fw-hero .fw-meta{color:var(--fw-ink-soft);font-size:13px;margin-bottom:10px;}
+.fw-hero .fw-lines{font-size:16px;line-height:1.9;color:var(--fw-ink);}
+.fw-hero .fw-actions{margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;}
+
+/* 按钮 */
+.fw-btn{display:inline-block;border:1px solid var(--fw-seal);color:var(--fw-seal);border-radius:8px;padding:8px 18px;font-size:14px;background:transparent;cursor:pointer;text-decoration:none;transition:.15s;}
+.fw-btn:hover{background:var(--fw-seal);color:#fff;}
+.fw-btn--ghost{border-color:var(--fw-line);color:var(--fw-ink-soft);}
+.fw-btn--ghost:hover{background:var(--fw-ink-soft);color:#fff;border-color:var(--fw-ink-soft);}
+
+/* 浏览 chips */
+.fw-chips{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 4px;}
+.fw-chip{display:inline-block;border:1px solid var(--fw-line);border-radius:999px;padding:6px 16px;font-size:13px;color:var(--fw-ink-soft);text-decoration:none;background:var(--fw-paper-2);}
+.fw-chip:hover{border-color:var(--fw-seal);color:var(--fw-seal);}
+.fw-chip--active{background:var(--fw-seal);color:#fff;border-color:var(--fw-seal);}
+
+/* 诗词卡片网格 */
+.fw-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:8px;}
+.fw-card{border:1px solid var(--fw-line);border-radius:12px;background:var(--fw-paper-2);padding:16px;display:flex;flex-direction:column;gap:8px;transition:.15s;text-decoration:none;color:inherit;}
+.fw-card:hover{border-color:var(--fw-seal);transform:translateY(-2px);}
+.fw-card .fw-tag{font-size:12px;color:var(--fw-seal);}
+.fw-card h3{font-size:16px;margin:0;font-weight:600;}
+.fw-card .fw-excerpt{font-size:13px;line-height:1.7;color:var(--fw-ink-soft);flex:1;}
+.fw-card .fw-more{font-size:12px;color:var(--fw-gold);}
+
+/* 订阅 + Looma */
+.fw-subscribe{border:1px solid var(--fw-line);border-radius:14px;background:var(--fw-paper-2);padding:24px 28px;margin-top:36px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;}
+.fw-subscribe .fw-sub-body{flex:1;min-width:220px;}
+.fw-subscribe h2{font-size:17px;margin:0 0 4px;}
+.fw-subscribe p{font-size:13px;color:var(--fw-ink-soft);margin:0;}
+.fw-sub-form{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;}
+.fw-sub-form input{flex:1;min-width:180px;border:1px solid var(--fw-line);border-radius:8px;padding:8px 12px;font-size:13px;font-family:inherit;background:#fff;}
+.fw-sub-note{font-size:12px;color:var(--fw-jade);margin-top:8px;}
+
+/* 单篇诗词页 */
+.fw-single-meta{display:flex;gap:14px;flex-wrap:wrap;color:var(--fw-ink-soft);font-size:13px;margin:10px 0 18px;}
+.fw-single-meta .fw-pill{border:1px solid var(--fw-line);border-radius:999px;padding:3px 12px;background:var(--fw-paper-2);}
+.fw-poem-text{font-size:19px;line-height:2.1;background:var(--fw-paper-2);border:1px solid var(--fw-line);border-radius:12px;padding:24px 28px;white-space:pre-wrap;font-family:var(--fw-serif);}
+.fw-prevnext{display:flex;justify-content:space-between;gap:12px;margin:24px 0;}
+.fw-prevnext a{flex:1;border:1px solid var(--fw-line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--fw-ink);background:var(--fw-paper-2);}
+.fw-prevnext a span{display:block;font-size:12px;color:var(--fw-ink-soft);}
+.fw-prevnext a:hover{border-color:var(--fw-seal);}
+.fw-looma{display:flex;gap:16px;align-items:center;flex-wrap:wrap;border:1px dashed var(--fw-seal);border-radius:12px;padding:18px 22px;margin:22px 0;background:rgba(158,43,37,.04);}
+.fw-looma .fw-looma-body{flex:1;min-width:200px;}
+.fw-looma h3{margin:0 0 4px;font-size:15px;}
+.fw-looma p{margin:0;font-size:13px;color:var(--fw-ink-soft);}
+
+/* 归档筛选条 */
+.fw-filterbar{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px;align-items:center;}
+.fw-filterbar .fw-label{font-size:13px;color:var(--fw-ink-soft);margin-right:4px;}
+
+/* 订阅状态提示 */
+.fw-note{font-size:13px;border-radius:8px;padding:10px 14px;margin:0 0 14px;width:100%;}
+.fw-note--ok{background:rgba(95,122,110,.12);color:var(--fw-jade);border:1px solid var(--fw-jade);}
+.fw-note--err{background:rgba(158,43,37,.10);color:var(--fw-seal);border:1px solid var(--fw-seal);}
+
+@media (max-width:640px){
+  .fw-hero{flex-direction:column;align-items:flex-start;}
+  .fw-hero::after{display:none;}
+  .fw-hero h1{font-size:22px;}
+}

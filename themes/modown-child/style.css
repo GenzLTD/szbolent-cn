@@ -1,0 +1,11 @@
+/*
+ Theme Name: 放翁文库 (Modown Child)
+ Template: modown
+ Author: GenzLTD
+ Description: 陆游诗词文库国风改版子主题：修复主导航、国风视觉、每日一诗首页、体裁/词牌分面、单篇增强与 Looma 对话入口。
+*/
+
+/* 国风视觉由 style-fangweng.css 提供，本文件仅声明子主题并放少量基类。 */
+body.fw-themed {
+  background: #f7f1e3;
+}
