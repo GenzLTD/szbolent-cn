@@ -21,7 +21,10 @@ add_filter( 'body_class', function ( $classes ) {
 } );
 
 // 2) 注册诗词分类法（体裁 / 词牌）
-add_action( 'init', 'fw_register_poem_taxonomies', 5 );
+//    注意：poem 自定义文章类型在 mu-plugins/bookstore.php 的 init 优先级 10 注册，
+//    故本注册必须晚于 10（此处用 15），否则 post_type_exists('poem') 尚为 false 而提前 return，
+//    导致每个前端请求都拿不到 poem_genre / poem_cipai 分类法。回填(20)与菜单(30)均排在其后。
+add_action( 'init', 'fw_register_poem_taxonomies', 15 );
 function fw_register_poem_taxonomies() {
 	if ( ! post_type_exists( 'poem' ) ) {
 		return;
@@ -100,7 +103,7 @@ function fw_term_link( $name, $tax, $fallback ) {
 	return $fallback;
 }
 
-// 4) 修复主导航：建一个菜单并指派到 main 位置
+// 4) 修复主导航：建一个菜单并指派到 main 位置（幂等、可复用已存在菜单、避免重名冲突）
 add_action( 'init', 'fw_ensure_main_menu', 30 );
 add_action( 'after_switch_theme', 'fw_ensure_main_menu' );
 function fw_ensure_main_menu() {
@@ -111,10 +114,59 @@ function fw_ensure_main_menu() {
 	if ( ! function_exists( 'wp_get_nav_menus' ) ) {
 		return;
 	}
-	$menus = wp_get_nav_menus( array( 'slug' => 'fw-main' ) );
-	if ( empty( $menus ) ) {
+
+	// 1) 优先复用：slug=fw-main 或 名称=主导航（兼容历史已建菜单，避免重复创建/重名冲突）
+	$menu_id   = 0;
+	$found_obj = null;
+	foreach ( wp_get_nav_menus() as $m ) {
+		if ( $m->slug === 'fw-main' || $m->name === '主导航' ) {
+			$menu_id   = (int) $m->term_id;
+			$found_obj = $m;
+			break;
+		}
+	}
+
+	$created = false;
+	if ( ! $menu_id ) {
+		// 创建需要 edit_theme_options 权限：CLI / 未登录访客默认无此权限，故临时切换为管理员
+		$prev_user = get_current_user_id();
+		if ( ! current_user_can( 'edit_theme_options' ) ) {
+			$admins = get_users( array( 'role' => 'administrator', 'number' => 1, 'fields' => 'ID' ) );
+			if ( empty( $admins ) ) {
+				return; // 无管理员账号，无法创建菜单
+			}
+			wp_set_current_user( (int) $admins[0] );
+		}
 		$menu_id = wp_create_nav_menu( '主导航' );
+		if ( is_wp_error( $menu_id ) ) {
+			// 名称冲突：说明已存在同名菜单，按名取回
+			foreach ( wp_get_nav_menus() as $m ) {
+				if ( $m->name === '主导航' ) {
+					$menu_id   = (int) $m->term_id;
+					$found_obj = $m;
+					break;
+				}
+			}
+		}
+		// 还原当前用户（仅本次请求，且只在确实切换过时才还原）
+		if ( $prev_user ) {
+			wp_set_current_user( $prev_user );
+		}
+		$created = true;
+	}
+
+	if ( ! $menu_id || is_wp_error( $menu_id ) ) {
+		return;
+	}
+
+	// 2) 规范化 slug 为 fw-main（保证后续幂等识别，且仅在未对齐时才写库）
+	$current = wp_get_nav_menu_object( $menu_id );
+	if ( $current && $current->slug !== 'fw-main' ) {
 		wp_update_nav_menu_object( $menu_id, array( 'slug' => 'fw-main' ) );
+	}
+
+	// 3) 仅新建时填充菜单项（复用已有菜单不重复添加，避免条目翻倍）
+	if ( $created ) {
 		$items = array(
 			array( 'title' => '首页', 'url' => home_url( '/' ) ),
 			array( 'title' => '诗词', 'url' => home_url( '/poem/' ) ),
@@ -129,13 +181,12 @@ function fw_ensure_main_menu() {
 				'menu-item-status' => 'publish',
 			) );
 		}
-	} else {
-		$menu_id = $menus[0]->term_id;
 	}
-	// 指派到 main 位置（修复占位警告）
+
+	// 4) 指派到 main 位置（修复 “Please go to the background Appearance-Menu” 警告）
 	$locations = get_theme_mod( 'nav_menu_locations', array() );
 	if ( empty( $locations['main'] ) || (int) $locations['main'] !== (int) $menu_id ) {
-		$locations['main'] = $menu_id;
+		$locations['main'] = (int) $menu_id;
 		set_theme_mod( 'nav_menu_locations', $locations );
 	}
 }

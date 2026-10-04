@@ -3,8 +3,8 @@
  * 诗词分面浏览共享模板
  * 被以下三个 WP 模板共用：
  *   - archive-poem.php            （/poem/ 自定义文章类型归档）
- *   - taxonomy-poem_genre.php     （/poem-genre/*/ 体裁归档）
- *   - taxonomy-poem_cipai.php     （/poem-cipai/*/ 词牌归档）
+ *   - taxonomy-poem_genre.php     （/poem-genre/ 体裁归档）
+ *   - taxonomy-poem_cipai.php     （/poem-cipai/ 词牌归档）
  * 仅含 .fw-wrap 内容；页头/页脚由调用方负责。
  */
 $current      = get_queried_object();
