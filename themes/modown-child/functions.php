@@ -20,6 +20,21 @@ add_filter( 'body_class', function ( $classes ) {
 	return $classes;
 } );
 
+// 0) 首页接管：放翁文库 国风首页（home.php）必须优先于任何 mu-plugin 的劫持。
+//    mu-plugins/bookstore-front.php 用 template_include 优先级 99 把首页指到 bookstore-home.php，
+//    这里用更高优先级(100)把首页模板强制指回子主题 home.php，保证“全面升级”的 国风首页
+//    （每日一诗 / 体裁词牌分面 / 订阅 / Looma 联动）生效；bookstore-front 的其余功能
+//    （诗词标题格式、rel=canonical、/poem/?genre= 体裁归档）不受影响。
+add_filter( 'template_include', function ( $template ) {
+	if ( is_home() || is_front_page() ) {
+		$home = get_stylesheet_directory() . '/home.php';
+		if ( file_exists( $home ) ) {
+			return $home;
+		}
+	}
+	return $template;
+}, 100 );
+
 // 2) 注册诗词分类法（体裁 / 词牌）
 //    注意：poem 自定义文章类型在 mu-plugins/bookstore.php 的 init 优先级 10 注册，
 //    故本注册必须晚于 10（此处用 15），否则 post_type_exists('poem') 尚为 false 而提前 return，
