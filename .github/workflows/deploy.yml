@@ -120,3 +120,11 @@ jobs:
 
       - name: Healthcheck
         run: ssh deploy 'bash /opt/szbolent-cn/scripts/healthcheck.sh'
+
+      # healthcheck 只验「服务活着」（端口/安装态/容器），活着 ≠ 好看。
+      # 这一层验「用户打开页面看到什么」：站名、描述、canonical、首页/归档列表、
+      # 单篇正文、跨仓 feed、图标。书店是服务端渲染，纯 curl 就够（门户是 SPA，
+      # 那边必须上 playwright）。
+      # 不要给它加 continue-on-error —— 红了就是红了，我们需要它挡住发布。
+      - name: Verify storefront (user-visible layer)
+        run: ssh deploy "BASE_URL=https://szbolent.cn bash /opt/szbolent-cn/scripts/verify-storefront.sh"
