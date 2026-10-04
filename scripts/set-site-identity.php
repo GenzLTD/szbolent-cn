@@ -18,9 +18,13 @@
 require '/var/www/html/wp-load.php';
 
 $force = in_array( '--force', $argv, true );
-$icon  = '';
-foreach ( $argv as $a ) {
-	if ( 0 === strpos( $a, '/' ) ) { $icon = $a; }
+// 只认「显式传入的图片路径」：跳过 $argv[0]（脚本自身路径也是 / 开头，曾把它当成图标），
+// 且必须是图片后缀，避免把任何绝对路径当图标注册成附件。
+$icon = '';
+foreach ( array_slice( $argv, 1 ) as $a ) {
+	if ( 0 === strpos( $a, '/' ) && preg_match( '/\.(png|jpe?g|webp|gif)$/i', $a ) ) {
+		$icon = $a;
+	}
 }
 if ( '' === $icon ) {
 	$icon = '/var/www/html/wp-content/uploads/2026/10/fangweng-icon.png';
@@ -49,8 +53,33 @@ if ( $force || get_option( 'blogdescription' ) !== $desc ) {
 	echo "⏭ 副标题已是目标值，跳过\n";
 }
 
+// 2.5) 首页 description：主题（modown）首页取的是主题设置项 Modown['description']，
+//      不是 WP 的 blogdescription，所以只改副标题首页 meta 仍是空的。这里补上。
+//      只在为空时写入 —— 博主在主题设置里填过就尊重博主的值。
+$theme_opt = get_option( 'Modown' );
+if ( ! is_array( $theme_opt ) ) {
+	$theme_opt = array();
+}
+$theme_desc = isset( $theme_opt['description'] ) ? trim( (string) $theme_opt['description'] ) : '';
+if ( '' === $theme_desc || $force ) {
+	$theme_opt['description'] = $desc;
+	update_option( 'Modown', $theme_opt );
+	$changed = true;
+	echo "✅ 主题首页 description -> {$desc}\n";
+} else {
+	echo "⏭ 主题首页 description 已填（{$theme_desc}），跳过\n";
+}
+
 // 3) 站点图标
 $current = (int) get_option( 'site_icon' );
+// 已设置的图标可能是坏的（指向了非图片文件 / 文件已不在），这种情况按「未设置」处理
+if ( $current ) {
+	$cur_file = get_attached_file( $current );
+	if ( ! $cur_file || ! file_exists( $cur_file ) || ! preg_match( '/\.(png|jpe?g|webp|gif)$/i', $cur_file ) ) {
+		echo "⚠️ 现有站点图标 attachment {$current} 指向的文件不是有效图片，重建\n";
+		$current = 0;
+	}
+}
 if ( ! file_exists( $icon ) ) {
 	echo "⚠️ 图标文件不存在：{$icon}（先把 PNG 放进 uploads 再跑，图标这一步跳过）\n";
 } elseif ( ! $force && $current && get_post( $current ) ) {

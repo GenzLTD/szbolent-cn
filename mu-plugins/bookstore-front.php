@@ -103,33 +103,44 @@ add_action( 'pre_get_posts', function ( $q ) {
 
 // ---------- 2) 标题：词牌页「词牌名（首句…）— 站名」----------
 // 同名作品靠首句区分（同名词牌最多 30 首，浏览器标题里必须能一眼分辨）。
-// 分隔符只在诗词相关页改成「—」，其它页面不夺主题的设定。
+//
+// 口径：博主的 modown 主题用的是旧 API wp_title()，不是 title-tag，
+// 所以 document_title_parts 挂了也不生效 —— 两个入口都要给：
+//   wp_title             → 本主题实际走这条
+//   document_title_parts → 换主题 / 启用 title-tag 后仍然成立
+// 只改诗词相关页，其它页面不夺主题的设定。
+
+/** 取诗词相关页的标题主体，非相关页返回 null */
+function sb_poem_title() {
+	if ( is_singular( 'poem' ) ) {
+		$post = get_queried_object();
+		if ( ! $post ) return null;
+		$line = sb_clip( sb_first_line( $post ) );
+		return $line ? $post->post_title . '（' . $line . '…）' : $post->post_title;
+	}
+	$g = sb_current_genre();
+	if ( $g ) return $g;
+	if ( is_post_type_archive( 'poem' ) ) return '诗词';
+	return null;
+}
+
+add_filter( 'wp_title', function ( $title, $sep, $seplocation ) {
+	$t = sb_poem_title();
+	if ( null === $t ) return $title;
+	// 只给标题主体：站名由 wp_title() 自己按 seplocation 追加（实测它会再拼一次站名，
+	// 这里再写就变成「…放翁文库放翁文库」）。分隔符用「—」，尾随空格对齐追加结果。
+	return $t . ' — ';
+}, 10, 3 );
+
 add_filter( 'document_title_separator', function ( $sep ) {
-	return ( is_singular( 'poem' ) || sb_current_genre() || is_post_type_archive( 'poem' ) ) ? '—' : $sep;
+	return ( null !== sb_poem_title() ) ? '—' : $sep;
 } );
 
 add_filter( 'document_title_parts', function ( $parts ) {
-	if ( is_singular( 'poem' ) ) {
-		$post = get_queried_object();
-		if ( $post ) {
-			$line = sb_clip( sb_first_line( $post ) );
-			$parts['title'] = $line
-				? $post->post_title . '（' . $line . '…）'
-				: $post->post_title;
-			unset( $parts['tagline'] );
-		}
-		return $parts;
-	}
-	$g = sb_current_genre();
-	if ( $g ) {
-		$parts['title'] = $g;
-		unset( $parts['tagline'] );
-		return $parts;
-	}
-	if ( is_post_type_archive( 'poem' ) ) {
-		$parts['title'] = '诗词';
-		unset( $parts['tagline'] );
-	}
+	$t = sb_poem_title();
+	if ( null === $t ) return $parts;
+	$parts['title'] = $t;
+	unset( $parts['tagline'] );
 	return $parts;
 } );
 
